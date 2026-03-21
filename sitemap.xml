@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://pesacheck.vercel.app/</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Core tools -->
+  <url><loc>https://pesacheck.vercel.app/#analyzer</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#paye</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#salary</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#loan</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#afford</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#emergency</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#school</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#budget</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#debt</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#networth</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#invest</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#retire</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#scam</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#quiz</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Planning tools -->
+  <url><loc>https://pesacheck.vercel.app/#tbill</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#goals</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#inflation</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#insurance</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#rentvsbuy</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#harambee</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#wedding</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#challenge</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#billsplit</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#healthscore</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- Business tools -->
+  <url><loc>https://pesacheck.vercel.app/#hustle</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#breakeven</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#selfemployed</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#chama</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#remit</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#property</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#car</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- Info pages -->
+  <url><loc>https://pesacheck.vercel.app/#about</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#privacy</loc><lastmod>2026-03-20</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#terms</loc><lastmod>2026-03-20</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://pesacheck.vercel.app/#methodology</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+
+</urlset>

@@ -1,0 +1,9 @@
+# PesaCheck robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pesacheck.vercel.app/sitemap.xml
+
+# Disallow nothing — all pages are public and indexable
+# Last updated: March 2026

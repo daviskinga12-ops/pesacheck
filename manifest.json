@@ -1,0 +1,50 @@
+{
+  "name": "PesaCheck — Financial Tools",
+  "short_name": "PesaCheck",
+  "description": "32 free financial tools for Kenya and the world. M-Pesa analyzer, PAYE decoder, loan checker, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a08",
+  "theme_color": "#2ECC8A",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["finance", "education", "productivity"],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "PesaCheck — 32 Free Financial Tools"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "M-Pesa Analyzer",
+      "short_name": "Analyzer",
+      "description": "Analyze your M-Pesa statement",
+      "url": "/#analyzer"
+    },
+    {
+      "name": "PAYE Decoder",
+      "short_name": "PAYE",
+      "description": "Decode your payslip",
+      "url": "/#paye"
+    },
+    {
+      "name": "Loan Checker",
+      "short_name": "Loans",
+      "description": "Check any loan",
+      "url": "/#loan"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
