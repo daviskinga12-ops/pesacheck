@@ -6,16 +6,13 @@
 <title>PesaCheck — Kenya's Complete Financial Intelligence Platform</title>
 <meta name="description" content="14 free financial tools for Kenyans and the world. Analyze M-Pesa statements, decode PAYE, check loans, plan school fees, track net worth, plan debt payoff, and more. 100% private — nothing leaves your device.">
 <meta property="og:title" content="PesaCheck — 32 Free Financial Tools for Kenya &amp; the World">
-<meta property="og:description" content="32 free financial tools. M-Pesa analyzer, PAYE decoder, retirement calculator, scam detector, loan checker &amp; more. 100% private — nothing leaves your device.">
+<meta property="og:description" content="32 free financial tools. Zero cost. Built for real financial problems. 100% private.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pesacheck.vercel.app">
 <meta property="og:image" content="https://pesacheck.vercel.app/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="PesaCheck — 32 free financial tools for Kenya and the world">
 <meta name="twitter:image" content="https://pesacheck.vercel.app/og-image.png">
-<meta name="twitter:title" content="PesaCheck — 32 Free Financial Tools">
-<meta name="twitter:description" content="M-Pesa analyzer, PAYE decoder, retirement calculator, scam detector &amp; 28 more. Free. Private. Works on any phone.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PesaCheck — Kenya's Financial Platform">
 <meta name="twitter:description" content="14 free tools. M-Pesa analyzer, loan checker, PAYE decoder, debt planner & more.">
@@ -49,7 +46,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-<link rel="dns-prefetch" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
@@ -492,62 +488,38 @@ body.disclaimer-active .page.active{padding-top:calc(var(--nav-h) + 40px)}
 .sz.safe{background:var(--green-bg);color:var(--green)}
 
 /* ── COOKIE CONSENT ── */
-.cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--surface2);border-top:0.5px solid var(--border2);padding:1rem 1.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;transform:translateY(0);transition:transform .3s ease}
-.cookie-banner.hidden{transform:translateY(100%)}
-.cookie-text{flex:1;min-width:220px;font-size:12px;color:var(--text2);line-height:1.5}
+.cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--surface2);border-top:0.5px solid var(--border2);padding:.875rem 1.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;transform:translateY(0);transition:transform .3s ease}
+.cookie-banner.hidden{transform:translateY(110%)}
+.cookie-text{flex:1;min-width:200px;font-size:12px;color:var(--text2);line-height:1.5}
 .cookie-text a{color:var(--green);text-decoration:none;font-weight:600}
-.cookie-btns{display:flex;gap:8px;flex-shrink:0;flex-wrap:wrap}
-.cookie-accept{padding:8px 18px;background:var(--green);color:#0a0a08;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif}
-.cookie-decline{padding:8px 14px;background:none;color:var(--text3);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:12px;cursor:pointer;font-family:'Syne',sans-serif}
+.cookie-accept{padding:7px 16px;background:var(--green);color:#0a0a08;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif}
+.cookie-decline{padding:7px 12px;background:none;color:var(--text3);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:12px;cursor:pointer;font-family:'Syne',sans-serif}
+
 /* ── LIGHT MODE ── */
-body.light-mode{--bg:#f5f5f0;--surface:#ffffff;--surface2:#f0efe9;--surface3:#e8e7e0;--surface4:#dddcd5;--text:#1a1a18;--text2:#4a4a45;--text3:#8a8a84;--border:rgba(0,0,0,.08);--border2:rgba(0,0,0,.15);--green-bg:rgba(46,204,138,.1);--red-bg:rgba(232,93,74,.1);--amber-bg:rgba(245,166,35,.1);--blue-bg:rgba(91,158,245,.1);--purple-bg:rgba(180,126,245,.1)}
-body.light-mode body::before{background:radial-gradient(ellipse at 10% 10%,rgba(46,204,138,.06) 0%,transparent 50%)}
-.theme-btn{background:none;border:0.5px solid var(--border2);border-radius:var(--rs);padding:6px 10px;cursor:pointer;color:var(--text2);font-size:13px;transition:all .15s;flex-shrink:0}
-.theme-btn:hover{background:var(--surface2);color:var(--text)}
+body.light-mode{--bg:#f5f5f0;--surface:#ffffff;--surface2:#f0efe9;--surface3:#e8e7e0;--surface4:#dddcd5;--text:#1a1a18;--text2:#4a4a45;--text3:#8a8a84;--border:rgba(0,0,0,.08);--border2:rgba(0,0,0,.15);--green-bg:rgba(46,204,138,.1)}
+.theme-btn{background:none;border:0.5px solid var(--border2);border-radius:var(--rs);padding:5px 9px;cursor:pointer;color:var(--text2);font-size:12px;transition:all .15s;flex-shrink:0}
+.theme-btn:hover{background:var(--surface2)}
+
 /* ── NEWSLETTER ── */
 .newsletter-bar{background:linear-gradient(135deg,rgba(46,204,138,.06),rgba(91,158,245,.04));border:0.5px solid rgba(46,204,138,.15);border-radius:var(--r);padding:1.5rem;margin:2rem 0}
-.newsletter-bar h3{font-size:15px;font-weight:700;margin-bottom:.35rem}
-.newsletter-bar p{font-size:13px;color:var(--text2);margin-bottom:1rem}
-.newsletter-form{display:flex;gap:8px;max-width:440px;flex-wrap:wrap}
+.newsletter-bar h3{font-size:15px;font-weight:700;margin-bottom:.3rem}
+.newsletter-bar p{font-size:13px;color:var(--text2);margin-bottom:.875rem}
+.newsletter-form{display:flex;gap:8px;max-width:420px;flex-wrap:wrap}
 .newsletter-form input{flex:1;min-width:180px;padding:10px 14px;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:13px;color:var(--text);font-family:'Syne',sans-serif;outline:none}
-.newsletter-form button{padding:10px 18px;background:var(--green);color:#0a0a08;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif;white-space:nowrap}
-/* ── TESTIMONIALS ── */
-.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:1.5rem 0}
-.testimonial-card{background:var(--surface);border:0.5px solid var(--border);border-radius:var(--r);padding:1.25rem}
-.testimonial-text{font-size:13px;color:var(--text2);line-height:1.65;margin-bottom:.75rem;font-style:italic}
-.testimonial-author{font-size:12px;font-weight:700;color:var(--text)}
-.testimonial-role{font-size:11px;color:var(--text3);font-family:DM Mono,monospace}
-/* ── RELATED TOOLS ── */
-.related-tools{margin-top:2rem;padding-top:1.25rem;border-top:0.5px solid var(--border)}
-.related-tools-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text3);font-family:DM Mono,monospace;margin-bottom:.75rem}
-.related-tools-grid{display:flex;gap:8px;flex-wrap:wrap}
-.related-tool-btn{padding:8px 14px;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:12px;font-weight:600;cursor:pointer;color:var(--text2);font-family:'Syne',sans-serif;transition:all .15s}
-.related-tool-btn:hover{background:var(--green-bg);border-color:var(--green);color:var(--green)}
-/* ── PRINT ── */
-@media print{
-  .nav,.trust-bar,.disclaimer-bar,.cookie-banner,.mobile-menu,.back-btn,.share-row,.newsletter-bar,.related-tools,.pro-banner,.footer{display:none!important}
-  .page{display:block!important;padding-top:0!important}
-  body{background:#fff!important;color:#000!important}
-  .result-box{border:1px solid #ccc!important;display:block!important}
-  .card{border:1px solid #eee!important}
-}
+.newsletter-form button{padding:10px 16px;background:var(--green);color:#0a0a08;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif}
 
-/* ── MONTH-OVER-MONTH COMPARISON ── */
+/* ── PRINT ── */
+@media print{.nav,.trust-bar,.disclaimer-bar,.cookie-banner,.mobile-menu,.back-btn,.share-row,.newsletter-bar,.pro-banner,.footer{display:none!important}.page{display:block!important;padding-top:0!important}body{background:#fff!important;color:#000!important}.result-box,.card{border:1px solid #ccc!important}}
+
+/* ── COMPARE ── */
 .compare-bar{background:linear-gradient(135deg,rgba(91,158,245,.06),rgba(46,204,138,.04));border:0.5px solid rgba(91,158,245,.2);border-radius:var(--r);padding:1rem 1.25rem;margin-top:1rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
 .compare-bar-text{flex:1;min-width:160px;font-size:13px;color:var(--text2);line-height:1.5}
 .compare-bar-text strong{color:var(--blue)}
-.compare-btn{padding:8px 16px;background:var(--blue);color:#fff;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif;white-space:nowrap;flex-shrink:0;transition:opacity .15s}
-.compare-btn:hover{opacity:.85}
-.compare-btn.secondary{background:none;border:0.5px solid var(--border2);color:var(--text2)}
-.compare-btn.secondary:hover{background:var(--surface2);color:var(--text)}
+.compare-btn{padding:8px 16px;background:var(--blue);color:#fff;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif;white-space:nowrap}
 .snapshot-item{background:var(--surface);border:0.5px solid var(--border);border-radius:var(--rs);padding:10px 14px;display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;cursor:pointer;transition:border-color .15s}
-.snapshot-item:hover{border-color:var(--blue)}
-.snapshot-item.selected{border-color:var(--blue);background:var(--blue-bg)}
-.snapshot-date{font-size:12px;font-weight:700;color:var(--text)}
-.snapshot-meta{font-size:11px;font-family:DM Mono,monospace;color:var(--text3);margin-top:2px}
-.snapshot-score{font-size:18px;font-weight:800;font-family:DM Mono,monospace}
+.snapshot-item:hover,.snapshot-item.selected{border-color:var(--blue);background:var(--blue-bg)}
 .compare-metric{flex:1;min-width:100px;text-align:center;padding:1rem;background:var(--surface2);border-radius:var(--rs)}
-.compare-metric-val{font-size:18px;font-weight:800;font-family:DM Mono,monospace;line-height:1.2}
+.compare-metric-val{font-size:16px;font-weight:800;font-family:DM Mono,monospace;line-height:1.2}
 .compare-metric-lbl{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.07em;font-family:DM Mono,monospace;margin-top:3px}
 .compare-metric-delta{font-size:11px;font-weight:700;margin-top:4px;font-family:DM Mono,monospace}
 .compare-metric-delta.up{color:var(--green)}
@@ -556,12 +528,11 @@ body.light-mode body::before{background:radial-gradient(ellipse at 10% 10%,rgba(
 .compare-cat-row{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:0.5px solid var(--border);font-size:12px}
 .compare-cat-row:last-child{border-bottom:none}
 .compare-cat-name{flex:1;color:var(--text2)}
-.compare-cat-this{font-family:DM Mono,monospace;min-width:70px;text-align:right}
-.compare-cat-last{font-family:DM Mono,monospace;min-width:70px;text-align:right;color:var(--text3)}
-.compare-cat-arrow{min-width:30px;text-align:center;font-weight:700;font-size:13px}
+.compare-cat-this,.compare-cat-last{font-family:DM Mono,monospace;min-width:70px;text-align:right}
+.compare-cat-last{color:var(--text3)}
+.compare-cat-arrow{min-width:30px;text-align:center;font-weight:700}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
 </head>
 <body>
 
@@ -573,16 +544,10 @@ body.light-mode body::before{background:radial-gradient(ellipse at 10% 10%,rgba(
   <div class="trust-item"><svg class="trust-icon" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>SSL encrypted by Vercel</div>
 </div>
 
-<a href="#page-home" class="sr-only" style="position:absolute;left:-9999px;top:4px;z-index:9999;padding:8px 16px;background:var(--green);color:#0a0a08;border-radius:var(--rs);font-weight:700;font-size:14px" onfocus="this.style.left='4px'" onblur="this.style.left='-9999px'">Skip to main content</a>
-
-<!-- ── COOKIE CONSENT BANNER (Kenya Data Protection Act 2019) ── -->
-<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-  <div class="cookie-text">
-    🍪 PesaCheck uses essential browser storage (localStorage) for your tool preferences and the 52-Week Challenge progress. No tracking cookies. No ad cookies. 
-    <a href="#" onclick="navigate('privacy');cookieAccept();return false">Privacy Policy</a> · 
-    <a href="#" onclick="navigate('howit');cookieAccept();return false">How it works</a>
-  </div>
-  <div class="cookie-btns">
+<!-- ── COOKIE CONSENT (Kenya Data Protection Act 2019) ── -->
+<div class="cookie-banner" id="cookie-banner">
+  <div class="cookie-text">PesaCheck uses essential browser storage for your preferences. No tracking. No ads. <a href="#" onclick="navigate('privacy');cookieAccept();return false">Privacy Policy</a></div>
+  <div style="display:flex;gap:8px;flex-shrink:0">
     <button class="cookie-decline" onclick="cookieDecline()">Essential only</button>
     <button class="cookie-accept" onclick="cookieAccept()">Got it ✓</button>
   </div>
@@ -597,7 +562,7 @@ body.light-mode body::before{background:radial-gradient(ellipse at 10% 10%,rgba(
 <!-- ── NAVIGATION ── -->
 <nav class="nav">
   <div class="nav-inner">
-    <div class="nav-brand" onclick="navigate('home')" role="link" aria-label="PesaCheck home" tabindex="0">PesaCheck</div>
+    <div class="nav-brand" onclick="navigate('home')">PesaCheck</div>
     <div class="nav-links">
       <button class="nav-link active" onclick="navigate('home')">Home</button>
       <button class="nav-link" onclick="navigate('analyzer')">Analyzer</button>
@@ -632,15 +597,13 @@ body.light-mode body::before{background:radial-gradient(ellipse at 10% 10%,rgba(
       <button class="nav-link" onclick="navigate('wedding')">Wedding</button>
       <button class="nav-link" onclick="navigate('challenge')">52-Week</button>
       <button class="nav-link" onclick="navigate('compare')">📅 Compare</button>
-      <button class="nav-link" onclick="navigate('about')">About</button>
-      <button class="nav-link" onclick="navigate('advertise')">Advertise</button>
-      <button class="nav-link" onclick="navigate('sacco')">For SACCOs</button>
       <button class="nav-link" onclick="navigate('pro')">Pro</button>
+      <button class="nav-link" onclick="navigate('about')">About</button>
     </div>
-    <button class="theme-btn" onclick="toggleTheme()" id="theme-btn" title="Toggle light/dark mode" aria-label="Toggle light or dark mode">🌙</button>
-    <button class="lang-toggle" id="lang-btn" onclick="toggleLang()" aria-label="Switch language to Swahili">SW 🇰🇪</button>
+    <button class="theme-btn" onclick="toggleTheme()" id="theme-btn" aria-label="Toggle light or dark mode">🌙</button>
+    <button class="lang-toggle" id="lang-btn" onclick="toggleLang()">SW 🇰🇪</button>
     <button class="nav-cta" onclick="navigate('analyzer')">Analyze Statement</button>
-    <button class="nav-menu-btn" onclick="toggleMenu()" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+    <button class="nav-menu-btn" onclick="toggleMenu()" id="menu-btn">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </div>
@@ -684,10 +647,9 @@ body.light-mode body::before{background:radial-gradient(ellipse at 10% 10%,rgba(
   <button class="mobile-link" onclick="navigate('challenge');toggleMenu()">52-Week Challenge</button>
   <div style="height:0.5px;background:var(--border);margin:.5rem 0"></div>
   <button class="mobile-link" onclick="navigate('compare');toggleMenu()">📅 Month-over-Month Compare</button>
-  <button class="mobile-link" onclick="navigate('about');toggleMenu()">About PesaCheck</button>
-  <button class="mobile-link" onclick="navigate('advertise');toggleMenu()">Advertise</button>
-  <button class="mobile-link" onclick="navigate('sacco');toggleMenu()">For SACCOs &amp; Institutions</button>
   <button class="mobile-link" onclick="navigate('pro');toggleMenu()">PesaCheck Pro</button>
+  <button class="mobile-link" onclick="navigate('sacco');toggleMenu()">For SACCOs &amp; Institutions</button>
+  <button class="mobile-link" onclick="navigate('about');toggleMenu()">About PesaCheck</button>
   <button class="mobile-link" onclick="navigate('howit');toggleMenu()">How It Works</button>
   <button class="mobile-link" onclick="navigate('methodology');toggleMenu()">Data Sources</button>
   <button class="mobile-link" onclick="navigate('contact');toggleMenu()">Contact & Feedback</button>
@@ -699,7 +661,7 @@ body.light-mode body::before{background:radial-gradient(ellipse at 10% 10%,rgba(
 <!-- ══════════════════════════════════════════
      PAGE: HOME
 ══════════════════════════════════════════ -->
-<div class="page active" id="page-home" role="main" aria-label="PesaCheck home">
+<div class="page active" id="page-home">
   <div class="container-wide">
     <div class="home-hero">
       <div class="home-tag">PesaCheck Financial Platform</div>
@@ -928,50 +890,15 @@ body.light-mode body::before{background:radial-gradient(ellipse at 10% 10%,rgba(
       <div id="waitlist-confirm" style="font-size:12px;color:var(--green);margin-top:.5rem;display:none">You're on the list! We'll notify you when Pro launches.</div>
     </div>
 
-    <!-- TESTIMONIALS -->
-    <div style="margin:2rem 0">
-      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text3);font-family:DM Mono,monospace;margin-bottom:1rem;text-align:center">What Kenyans are saying</div>
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-text">"Used the PAYE Decoder and discovered my employer was calculating my deductions incorrectly. Showed HR the breakdown and got a correction. Saved me KES 4,200 a month."</div>
-          <div class="testimonial-author">James M.</div>
-          <div class="testimonial-role">Software Engineer · Nairobi</div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-text">"The Scam Detector saved my mother from losing KES 150,000 to a scheme promising 40% monthly returns. I sent her the result on WhatsApp. She didn&#39;t invest."</div>
-          <div class="testimonial-author">Faith K.</div>
-          <div class="testimonial-role">Teacher · Mombasa</div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-text">"Finally understood what M-Pesa was doing with my money every month. The statement analyzer showed I was spending KES 8,000 on things I didn&#39;t even remember buying."</div>
-          <div class="testimonial-author">Brian O.</div>
-          <div class="testimonial-role">Driver · Kisumu</div>
-        </div>
-      </div>
-      <div style="text-align:center;margin-top:.75rem">
-        <button class="btn-hero-outline" onclick="shareWhatsApp('I just used PesaCheck and it changed how I see my money. Try it free 👇\npesacheck.vercel.app\n@wealthwisefinancestate')" style="font-size:12px;padding:10px 18px">Share your own experience</button>
-      </div>
-    </div>
-
-    <!-- NEWSLETTER -->
+    <!-- NEWSLETTER BAR -->
     <div class="newsletter-bar">
       <h3>📬 Weekly financial tip — free</h3>
       <p>One actionable money insight every week. No spam. Unsubscribe anytime.</p>
       <form class="newsletter-form" onsubmit="newsletterSubmit(event)">
-        <input type="email" id="nl-email" placeholder="Your email address" required aria-label="Email address for newsletter">
+        <input type="email" id="nl-email" placeholder="Your email address" required>
         <button type="submit">Subscribe free</button>
       </form>
       <div id="nl-confirm" style="font-size:12px;color:var(--green);margin-top:.5rem;display:none">✓ You&#39;re subscribed! First tip arrives this week.</div>
-    </div>
-
-    <!-- WHATSAPP COMMUNITY -->
-    <div style="background:rgba(37,211,102,.06);border:0.5px solid rgba(37,211,102,.2);border-radius:var(--r);padding:1.25rem;margin:1rem 0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
-      <div style="font-size:24px">💬</div>
-      <div style="flex:1;min-width:200px">
-        <div style="font-size:14px;font-weight:700;margin-bottom:.25rem">Join the PesaCheck WhatsApp Channel</div>
-        <div style="font-size:13px;color:var(--text2)">New tool alerts, financial tips, and KRA/CBK rate updates straight to your WhatsApp.</div>
-      </div>
-      <a href="https://chat.whatsapp.com/GlpI2Q0Rc9t8ZxIv3MIDvC" target="_blank" rel="noopener" style="padding:10px 18px;background:#25D366;color:#fff;border-radius:var(--rs);font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap;flex-shrink:0" aria-label="Join PesaCheck WhatsApp Channel">Join Channel →</a>
     </div>
 
     <div style="text-align:center;padding:1rem 0 2rem">
@@ -1026,7 +953,7 @@ body.light-mode body::before{background:radial-gradient(ellipse at 10% 10%,rgba(
           <button class="footer-link" onclick="navigate('contact')">Contact Us</button>
           <button class="footer-link" onclick="navigate('advertise')">Advertise</button>
           <button class="footer-link" onclick="navigate('sacco')">For SACCOs</button>
-          <button class="footer-link" onclick="navigate('pro')">Pro (coming soon)</button>
+          <button class="footer-link" onclick="navigate('pro')">Pro</button>
           <button class="footer-link" onclick="navigate('privacy')">Privacy Policy</button>
           <button class="footer-link" onclick="navigate('terms')">Terms of Use</button>
         </div>
@@ -1175,20 +1102,20 @@ body.light-mode body::before{background:radial-gradient(ellipse at 10% 10%,rgba(
       <div class="sec-divider"><div class="sec-divider-line"></div><div class="sec-label">PesaCheck Insights</div><div class="sec-divider-line"></div></div>
       <div class="insight-list" id="az-insights"></div>
 
-      <!-- MONTH-OVER-MONTH SAVE PROMPT -->
-      <div id="az-compare-bar" class="compare-bar" style="display:none">
-        <div class="compare-bar-text">
-          <strong>📅 Save this month's results?</strong><br>
-          Compare with next month to track your financial progress over time.
-        </div>
-        <button class="compare-btn secondary" onclick="document.getElementById('az-compare-bar').style.display='none'">Skip</button>
-        <button class="compare-btn" onclick="azSaveSnapshot()">Save snapshot</button>
-      </div>
-      <div id="az-snapshot-saved" style="display:none;font-size:12px;color:var(--green);margin-top:.5rem;font-weight:600">✓ Snapshot saved. Upload next month's statement to compare.</div>
-
       <div style="display:flex;gap:8px;margin-top:1.5rem">
-        <button class="btn-secondary" id="az-copy-btn" onclick="azCopyResult()" style="width:auto;flex:1;margin-top:0">Copy & share result</button>
+        <!-- COMPARE/SAVE BAR -->
+      <div id="az-compare-bar" class="compare-bar" style="display:none">
+        <div class="compare-bar-text"><strong>📅 Save this month</strong><br>Compare with next month to track progress.</div>
+        <div style="display:flex;gap:8px;flex-shrink:0">
+          <button style="padding:7px 12px;background:none;color:var(--text3);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:12px;cursor:pointer;font-family:'Syne',sans-serif" onclick="document.getElementById('az-compare-bar').style.display='none'">Skip</button>
+          <button class="compare-btn" onclick="azSaveSnapshot()">Save snapshot</button>
+        </div>
+      </div>
+      <div id="az-snapshot-saved" style="display:none;font-size:12px;color:var(--green);margin-top:.5rem;font-weight:600">✓ Snapshot saved. Analyze next month to compare.</div>
+
+      <button class="btn-secondary" id="az-copy-btn" onclick="azCopyResult()" style="width:auto;flex:1;margin-top:0">Copy & share result</button>
         <button class="btn-secondary" id="az-pdf-btn" onclick="azExportPDF()" style="width:auto;flex:1;margin-top:0;background:var(--green-bg);border-color:var(--green);color:var(--green)">&#8595; Export PDF</button>
+        <button class="btn-secondary" onclick="navigate('compare')" style="width:auto;flex:1;margin-top:0;background:var(--blue-bg);border-color:var(--blue);color:var(--blue)">📅 Compare</button>
         <button class="btn-primary" onclick="azReset()" style="width:auto;flex:1;margin-top:0">Analyze another</button>
       </div>
     </div>
@@ -1236,7 +1163,6 @@ body.light-mode body::before{background:radial-gradient(ellipse at 10% 10%,rgba(
     </div>
 
     <div class="result-box" id="af-result">
-    <div class="related-tools"><div class="related-tools-label">Try these next</div><div class="related-tools-grid"><button class="related-tool-btn" onclick="navigate('loan')" aria-label="Try Loan Checker tool">Loan Checker</button><button class="related-tool-btn" onclick="navigate('budget')" aria-label="Try Budget Builder tool">Budget Builder</button><button class="related-tool-btn" onclick="navigate('emergency')" aria-label="Try Survival Fund tool">Survival Fund</button></div></div>
       <div id="af-tag-wrap"></div>
       <div class="verdict-title" id="af-verdict-title"></div>
       <div class="verdict-body" id="af-verdict-body" style="margin-top:.4rem"></div>
@@ -1303,7 +1229,6 @@ body.light-mode body::before{background:radial-gradient(ellipse at 10% 10%,rgba(
     </div>
 
     <div class="result-box" id="lc-result">
-    <div class="related-tools"><div class="related-tools-label">Try these next</div><div class="related-tools-grid"><button class="related-tool-btn" onclick="navigate('debt')" aria-label="Try Debt Snowball tool">Debt Snowball</button><button class="related-tool-btn" onclick="navigate('afford')" aria-label="Try Can I Afford This? tool">Can I Afford This?</button><button class="related-tool-btn" onclick="navigate('scam')" aria-label="Try Scam Detector tool">Scam Detector</button></div></div>
       <div id="lc-tag-wrap"></div>
       <div class="verdict-title" id="lc-verdict-title"></div>
       <div class="verdict-body" id="lc-verdict-body" style="margin-top:.4rem"></div>
@@ -1995,7 +1920,6 @@ function azRender(data){
   document.getElementById('az-proc').style.display='none';
   document.getElementById('az-results').style.display='block';
   window.scrollTo({top:60,behavior:'smooth'});
-  // Show save snapshot prompt
   setTimeout(azShowCompareBar, 800);
 }
 
@@ -2252,7 +2176,6 @@ let _azRT;window.addEventListener('resize',()=>{clearTimeout(_azRT);_azRT=setTim
       <div class="budget-cat"><div class="budget-cat-name">Other debts</div><input class="budget-cat-input" type="number" placeholder="0" oninput="nwCalc()" id="nw-other-debt"></div>
     </div>
     <div class="result-box" id="nw-result">
-    <div class="related-tools"><div class="related-tools-label">Try these next</div><div class="related-tools-grid"><button class="related-tool-btn" onclick="navigate('invest')" aria-label="Try Investment Calculator tool">Investment Calculator</button><button class="related-tool-btn" onclick="navigate('debt')" aria-label="Try Debt Snowball tool">Debt Snowball</button><button class="related-tool-btn" onclick="navigate('retire')" aria-label="Try Retirement Check tool">Retirement Check</button></div></div>
       <div id="nw-tag-wrap"></div>
       <div class="verdict-title" id="nw-verdict-title" style="margin-top:.5rem"></div>
       <div class="verdict-body" id="nw-verdict-body" style="margin-top:.4rem"></div>
@@ -2504,7 +2427,6 @@ let _azRT;window.addEventListener('resize',()=>{clearTimeout(_azRT);_azRT=setTim
       </div>
     </div>
     <div class="result-box" id="sal-result">
-    <div class="related-tools"><div class="related-tools-label">Try these next</div><div class="related-tools-grid"><button class="related-tool-btn" onclick="navigate('paye')" aria-label="Try PAYE Decoder tool">PAYE Decoder</button><button class="related-tool-btn" onclick="navigate('budget')" aria-label="Try Budget Builder tool">Budget Builder</button><button class="related-tool-btn" onclick="navigate('retire')" aria-label="Try Retirement Check tool">Retirement Check</button></div></div>
       <div id="sal-verdict-wrap"></div>
       <div class="verdict-title" id="sal-verdict-title" style="margin-top:.5rem"></div>
       <div class="verdict-body" id="sal-verdict-body" style="margin-top:.4rem"></div>
@@ -2526,7 +2448,6 @@ let _azRT;window.addEventListener('resize',()=>{clearTimeout(_azRT);_azRT=setTim
     <button class="back-btn" onclick="navigate('home')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Back to home</button>
     <div class="page-header">
       <div class="page-tag amber">PAYE Decoder</div>
-      <div style="background:var(--red-bg);border:0.5px solid rgba(232,93,74,.15);border-radius:var(--rs);padding:10px 14px;margin-top:.5rem;font-size:12px;color:var(--text2);display:flex;align-items:center;gap:10px"><span style="font-size:18px">▶️</span><span>Watch: <a href="https://youtube.com/@wealthwisefinancestate" target="_blank" rel="noopener" style="color:var(--green);font-weight:700;text-decoration:none">PAYE explained in 3 minutes</a> on WealthWise</span></div></div>
       <div class="page-title">Your payslip. <span class="amber">Decoded.</span></div>
       <p class="page-sub">Every Kenyan with a job has money taken before it reaches them. Most people have no idea what each deduction is, what it truly costs, or how to legally reduce it. This tool breaks it all down.</p>
     </div>
@@ -2548,7 +2469,6 @@ let _azRT;window.addEventListener('resize',()=>{clearTimeout(_azRT);_azRT=setTim
       </div>
     </div>
     <div class="result-box" id="py-result">
-    <div class="related-tools"><div class="related-tools-label">Try these next</div><div class="related-tools-grid"><button class="related-tool-btn" onclick="navigate('salary')" aria-label="Try Salary Check tool">Salary Check</button><button class="related-tool-btn" onclick="navigate('budget')" aria-label="Try Budget Builder tool">Budget Builder</button><button class="related-tool-btn" onclick="navigate('selfemployed')" aria-label="Try Self-Employed Tax tool">Self-Employed Tax</button></div></div>
       <div style="font-size:10px;font-family:'DM Mono',monospace;color:var(--text3);margin-bottom:.5rem">PesaCheck PAYE Decoder — 2026 Kenya rates</div>
       <div class="card" style="margin-bottom:1rem">
         <div class="paye-row"><div class="paye-name">Gross salary<small>What your employer pays</small></div><div class="paye-amount" id="py-gross-disp"></div></div>
@@ -2569,6 +2489,7 @@ let _azRT;window.addEventListener('resize',()=>{clearTimeout(_azRT);_azRT=setTim
       </div>
     </div>
   </div>
+</div>
 
 <!-- PAGE: SURVIVAL FUND CALCULATOR -->
 <div class="page" id="page-emergency">
@@ -2586,7 +2507,6 @@ let _azRT;window.addEventListener('resize',()=>{clearTimeout(_azRT);_azRT=setTim
       <div class="input-group"><label class="input-label">Monthly debt obligations (KES)</label><div class="input-sub">Loan repayments that must be paid regardless</div><input type="number" id="em-debt" placeholder="e.g. 0" oninput="emCalc()"></div>
     </div>
     <div class="result-box" id="em-result">
-    <div class="related-tools"><div class="related-tools-label">Try these next</div><div class="related-tools-grid"><button class="related-tool-btn" onclick="navigate('budget')" aria-label="Try Budget Builder tool">Budget Builder</button><button class="related-tool-btn" onclick="navigate('debt')" aria-label="Try Debt Snowball tool">Debt Snowball</button><button class="related-tool-btn" onclick="navigate('goals')" aria-label="Try Goal Planner tool">Goal Planner</button></div></div>
       <div class="survival-meter">
         <div style="font-size:12px;color:var(--text3);font-family:'DM Mono',monospace;margin-bottom:.25rem">Your survival runway</div>
         <div class="survival-days" id="em-days"></div>
@@ -2788,10 +2708,9 @@ document.addEventListener('DOMContentLoaded',function(){
   if(document.getElementById('hs-q-current')) hsRender();
   // Initialize 52-week challenge
   if(document.getElementById('ch-grid')) chRender();
-  // Initialize new features
+  // New features
   initCookieBanner();
   initTheme();
-  showRatesUpdate();
   // Set current month for school fees
   const m=new Date().getMonth()+1;
   if(document.getElementById('sf-month'))document.getElementById('sf-month').value=m;
@@ -3218,120 +3137,6 @@ function chCopy(){
 function chWhatsApp(){if(window._chData)shareWhatsApp(`${window._chData.name} Chama Report 📊\n\nHealth: ${window._chData.healthScore}% · Total assets: ${fmt(window._chData.totalGroupAssets)} · Per share: ${fmt(window._chData.sharePerMember)}\n\nFull report → pesacheck.vercel.app`);}
 
 // fmtShort and DOMContentLoaded defined above
-
-// ═══════════════════════════════════════════════════════
-// PESACHECK BACKEND — UPDATE THIS URL AFTER RAILWAY DEPLOY
-// ═══════════════════════════════════════════════════════
-const BACKEND_URL = 'https://pesacheck-backend-production.up.railway.app';
-
-// ═══════════════════════════════════════════════════════
-// PRO PAYMENT — M-PESA STK PUSH
-// ═══════════════════════════════════════════════════════
-async function initiateProPayment(e){
-  e.preventDefault();
-  const phone = document.getElementById('pro-phone').value.trim();
-  const email = document.getElementById('pro-email').value.trim();
-  const name  = document.getElementById('pro-name').value.trim();
-  const btn   = document.getElementById('pro-pay-btn');
-  const msg   = document.getElementById('pro-pay-msg');
-
-  if(!phone || !email){ msg.style.color='var(--red)'; msg.style.display='block'; msg.textContent='Please enter your phone number and email.'; return; }
-
-  btn.disabled = true;
-  btn.textContent = 'Sending payment prompt...';
-  msg.style.display = 'none';
-
-  try {
-    const res = await fetch(BACKEND_URL + '/initiate-payment', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({phone, email, name})
-    });
-    const data = await res.json();
-
-    if(data.success){
-      btn.textContent = 'Waiting for M-Pesa...';
-      msg.style.color = 'var(--green)';
-      msg.style.display = 'block';
-      msg.textContent = '✓ Check your phone — enter your M-Pesa PIN to complete payment. Your activation code will be emailed to ' + email + ' within 60 seconds of payment.';
-
-      // Poll for code after 30 seconds
-      setTimeout(() => {
-        btn.disabled = false;
-        btn.textContent = 'Pay KES 299 with M-Pesa';
-      }, 60000);
-    } else {
-      throw new Error(data.error || 'Payment failed');
-    }
-  } catch(err) {
-    btn.disabled = false;
-    btn.textContent = 'Pay KES 299 with M-Pesa';
-    msg.style.color = 'var(--red)';
-    msg.style.display = 'block';
-    msg.textContent = err.message || 'Could not initiate payment. Please try again.';
-  }
-}
-
-// ═══════════════════════════════════════════════════════
-// PRO CODE VERIFICATION
-// ═══════════════════════════════════════════════════════
-async function verifyProCode(){
-  const code = document.getElementById('pro-code-input').value.trim().toUpperCase();
-  const msg  = document.getElementById('pro-verify-msg');
-
-  if(!code){ msg.style.color='var(--red)'; msg.style.display='block'; msg.textContent='Please enter your activation code.'; return; }
-
-  msg.style.color = 'var(--text3)';
-  msg.style.display = 'block';
-  msg.textContent = 'Verifying...';
-
-  try {
-    const res = await fetch(BACKEND_URL + '/verify-code?code=' + encodeURIComponent(code));
-    const data = await res.json();
-
-    if(data.valid){
-      msg.style.color = 'var(--green)';
-      msg.textContent = '✓ Code valid! Pro access granted until ' + data.expiryFormatted + '. Welcome, ' + (data.name || 'subscriber') + '!';
-      // Store in localStorage for session
-      try{ localStorage.setItem('pc-pro-code', code); localStorage.setItem('pc-pro-expiry', data.expiry); }catch(e){}
-      // Show pro features (placeholder — expand when Pro features built)
-      document.querySelectorAll('.pro-feature').forEach(el => el.style.display = 'block');
-    } else {
-      const reasons = {
-        'not_found': 'This code does not exist. Check for typos.',
-        'expired': 'This code has expired. Please renew your subscription.',
-        'invalid_format': 'Invalid code format. Codes look like: PC-PRO-2026-03-A7K2',
-        'not_active': 'This code is no longer active.'
-      };
-      msg.style.color = 'var(--red)';
-      msg.textContent = '✗ ' + (reasons[data.reason] || 'Invalid code.');
-    }
-  } catch(err) {
-    msg.style.color = 'var(--amber)';
-    msg.textContent = 'Could not verify code. Check your internet connection.';
-  }
-}
-
-// ═══ PRO WAITLIST ═══
-function proWaitlistSubmit(e){
-  e.preventDefault();
-  const email = document.getElementById('pro-email').value.trim();
-  if(!email) return;
-  // Save locally
-  try{
-    const list = JSON.parse(localStorage.getItem('pc-pro-waitlist')||'[]');
-    list.push({email, date: new Date().toISOString()});
-    localStorage.setItem('pc-pro-waitlist', JSON.stringify(list));
-  }catch(err){}
-  // Send to Formspree (replace FORM_ID with your Formspree ID)
-  fetch('https://formspree.io/f/mvzwnoye', {
-    method:'POST',
-    headers:{'Content-Type':'application/json','Accept':'application/json'},
-    body: JSON.stringify({email, source:'PesaCheck Pro Waitlist', date: new Date().toISOString()})
-  }).catch(()=>{});
-  document.getElementById('pro-waitlist-confirm').style.display = 'block';
-  document.getElementById('pro-email').value = '';
-}
 
 // ══════════════════════════════════════════
 // T-BILL & M-AKIBA TRACKER
@@ -5014,893 +4819,207 @@ function chReset(){
 }
 
 
-// ═══════════════════════════════════════════════════════
-// COOKIE CONSENT (Kenya Data Protection Act 2019)
-// ═══════════════════════════════════════════════════════
-function initCookieBanner(){
-  try {
-    if(localStorage.getItem('pc-cookie-consent')) {
-      document.getElementById('cookie-banner').classList.add('hidden');
-    }
-  } catch(e) {}
-}
+// ═══ BACKEND URL ═══
+const BACKEND_URL = 'https://pesacheck-backend-production.up.railway.app';
 
+// ═══ COOKIE CONSENT ═══
+function initCookieBanner(){
+  try{ if(localStorage.getItem('pc-cookie')){ document.getElementById('cookie-banner').classList.add('hidden'); } }catch(e){}
+}
 function cookieAccept(){
   document.getElementById('cookie-banner').classList.add('hidden');
-  try { localStorage.setItem('pc-cookie-consent', 'accepted'); } catch(e) {}
+  try{ localStorage.setItem('pc-cookie','accepted'); }catch(e){}
 }
-
 function cookieDecline(){
   document.getElementById('cookie-banner').classList.add('hidden');
-  try { localStorage.setItem('pc-cookie-consent', 'essential-only'); } catch(e) {}
-  // Clear non-essential storage
-  try {
-    const keep = ['pc-cookie-consent','pc-disclaimer-dismissed'];
-    Object.keys(localStorage).forEach(k => {
-      if(!keep.includes(k)) localStorage.removeItem(k);
-    });
-  } catch(e) {}
+  try{ localStorage.setItem('pc-cookie','essential'); }catch(e){}
 }
 
-// ═══════════════════════════════════════════════════════
-// LIGHT / DARK MODE TOGGLE
-// ═══════════════════════════════════════════════════════
+// ═══ LIGHT/DARK THEME ═══
 function initTheme(){
-  try {
-    const saved = localStorage.getItem('pc-theme');
-    if(saved === 'light') {
-      document.body.classList.add('light-mode');
-      const btn = document.getElementById('theme-btn');
-      if(btn) btn.textContent = '☀️';
-    }
-  } catch(e) {}
+  try{ if(localStorage.getItem('pc-theme')==='light'){ document.body.classList.add('light-mode'); const b=document.getElementById('theme-btn'); if(b) b.textContent='☀️'; } }catch(e){}
 }
-
 function toggleTheme(){
-  const isLight = document.body.classList.toggle('light-mode');
-  const btn = document.getElementById('theme-btn');
-  if(btn) btn.textContent = isLight ? '☀️' : '🌙';
-  try { localStorage.setItem('pc-theme', isLight ? 'light' : 'dark'); } catch(e) {}
+  const on=document.body.classList.toggle('light-mode');
+  const b=document.getElementById('theme-btn'); if(b) b.textContent=on?'☀️':'🌙';
+  try{ localStorage.setItem('pc-theme',on?'light':'dark'); }catch(e){}
 }
 
-// ═══════════════════════════════════════════════════════
-// NEWSLETTER SIGNUP (Formspree)
-// ═══════════════════════════════════════════════════════
+// ═══ NEWSLETTER ═══
 function newsletterSubmit(e){
   e.preventDefault();
-  const email = document.getElementById('nl-email').value.trim();
+  const email=document.getElementById('nl-email').value.trim();
   if(!email) return;
-  fetch('https://formspree.io/f/mvzwnoye', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-    body: JSON.stringify({email, source: 'PesaCheck Newsletter', date: new Date().toISOString()})
-  }).catch(()=>{});
-  document.getElementById('nl-confirm').style.display = 'block';
-  document.getElementById('nl-email').value = '';
-  try { localStorage.setItem('pc-newsletter', email); } catch(e) {}
+  fetch('https://formspree.io/f/mvzwnoye',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({email,source:'Newsletter',date:new Date().toISOString()})}).catch(()=>{});
+  document.getElementById('nl-confirm').style.display='block';
+  document.getElementById('nl-email').value='';
 }
 
-// ═══════════════════════════════════════════════════════
-// KEYBOARD NAVIGATION SUPPORT
-// ═══════════════════════════════════════════════════════
-document.addEventListener('keydown', function(e) {
-  // Escape closes mobile menu
-  if(e.key === 'Escape') {
-    const menu = document.getElementById('mobile-menu');
-    if(menu && menu.classList.contains('open')) toggleMenu();
-    const banner = document.getElementById('cookie-banner');
-    if(banner && !banner.classList.contains('hidden')) cookieAccept();
-  }
-});
-
-// ═══════════════════════════════════════════════════════
-// UTM TRACKING FOR AFFILIATE / SHARING
-// ═══════════════════════════════════════════════════════
-function shareWhatsAppTracked(text, tool){
-  // Track which tool is being shared
-  try {
-    const shares = JSON.parse(localStorage.getItem('pc-shares') || '{}');
-    shares[tool] = (shares[tool] || 0) + 1;
-    localStorage.setItem('pc-shares', JSON.stringify(shares));
-  } catch(e) {}
-  shareWhatsApp(text);
+// ═══ PRO PAYMENT ═══
+async function initiateProPayment(e){
+  if(e) e.preventDefault();
+  const phone=document.getElementById('pro-phone').value.trim();
+  const email=document.getElementById('pro-email').value.trim();
+  const name=document.getElementById('pro-name').value.trim();
+  const btn=document.getElementById('pro-pay-btn');
+  const msg=document.getElementById('pro-pay-msg');
+  if(!phone||!email){ msg.style.color='var(--red)'; msg.style.display='block'; msg.textContent='Please enter your phone number and email.'; return; }
+  btn.disabled=true; btn.textContent='Sending payment prompt...'; msg.style.display='none';
+  try{
+    const res=await fetch(BACKEND_URL+'/initiate-payment',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({phone,email,name})});
+    const data=await res.json();
+    if(data.success){ btn.textContent='Waiting for M-Pesa...'; msg.style.color='var(--green)'; msg.style.display='block'; msg.textContent='✓ Check your phone — enter your M-Pesa PIN to complete. Your code will be emailed to '+email+' within 60 seconds.'; setTimeout(()=>{ btn.disabled=false; btn.textContent='Pay KES 299 with M-Pesa'; },60000); }
+    else throw new Error(data.error||'Payment failed');
+  }catch(err){ btn.disabled=false; btn.textContent='Pay KES 299 with M-Pesa'; msg.style.color='var(--red)'; msg.style.display='block'; msg.textContent=err.message; }
 }
 
-// ═══════════════════════════════════════════════════════
-// RATES LAST UPDATED NOTICE
-// ═══════════════════════════════════════════════════════
-const RATES_UPDATED = 'March 2026';
-function showRatesUpdate(){
-  document.querySelectorAll('.rates-notice').forEach(el => {
-    el.textContent = 'Rates last updated: ' + RATES_UPDATED;
-  });
+// ═══ PRO CODE VERIFICATION ═══
+async function verifyProCode(){
+  const code=document.getElementById('pro-code-input').value.trim().toUpperCase();
+  const msg=document.getElementById('pro-verify-msg');
+  if(!code){ msg.style.color='var(--red)'; msg.style.display='block'; msg.textContent='Enter your activation code.'; return; }
+  msg.style.color='var(--text3)'; msg.style.display='block'; msg.textContent='Verifying...';
+  try{
+    const res=await fetch(BACKEND_URL+'/verify-code?code='+encodeURIComponent(code));
+    const data=await res.json();
+    if(data.valid){ msg.style.color='var(--green)'; msg.textContent='✓ Code valid! Pro access until '+data.expiryFormatted+'.'; try{ localStorage.setItem('pc-pro-code',code); }catch(e){} }
+    else{ const r={'not_found':'Code not found.','expired':'Code has expired.','invalid_format':'Invalid format. Example: PC-PRO-2026-03-A7K2'}; msg.style.color='var(--red)'; msg.textContent='✗ '+(r[data.reason]||'Invalid code.'); }
+  }catch(err){ msg.style.color='var(--amber)'; msg.textContent='Could not verify. Check your connection.'; }
 }
 
-
-// ═══════════════════════════════════════════════════════
-// FINANCIAL IDENTITY CARD — PDF EXPORT (jsPDF)
-// ═══════════════════════════════════════════════════════
+// ═══ PDF EXPORT (jsPDF) ═══
 function azExportPDF(){
-  if(!azLastData){
-    alert('Please analyze a statement first.');
-    return;
-  }
-
-  // Check jsPDF is loaded
-  if(typeof window.jspdf === 'undefined' && typeof jsPDF === 'undefined'){
-    alert('PDF library not loaded yet. Please wait a moment and try again.');
-    return;
-  }
-
-  const btn = document.getElementById('az-pdf-btn');
-  if(btn){ btn.textContent = 'Generating PDF...'; btn.disabled = true; }
-
-  try {
-    const { jsPDF } = window.jspdf || { jsPDF: window.jsPDF };
-    const d = azLastData;
-    const { totalIn, totalOut, netFlow, savingsRate, catArr, identity, spiral, invisTaxTotal, verdictTag, verdictTitle, txnCount, filename, isDemo } = d;
-
-    const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
-    const W = 210, H = 297;
-    const MARGIN = 15;
-    const COL = W - MARGIN * 2;
-    let y = 0;
-
-    // ── HELPERS ──
-    const hex = (h) => {
-      const r = parseInt(h.slice(1,3),16)/255;
-      const g = parseInt(h.slice(3,5),16)/255;
-      const b = parseInt(h.slice(5,7),16)/255;
-      return [r*255, g*255, b*255];
-    };
-    const GREEN  = [46, 204, 138];
-    const DARK   = [10, 10, 8];
-    const SURFACE= [17, 17, 16];
-    const TEXT2  = [158, 155, 146];
-    const TEXT3  = [92, 90, 84];
-    const RED    = [232, 93, 74];
-    const AMBER  = [245, 166, 35];
-    const BLUE   = [91, 158, 245];
-    const PURPLE = [180, 126, 245];
-    const WHITE  = [242, 239, 230];
-
-    const setRGB = (arr) => doc.setTextColor(arr[0], arr[1], arr[2]);
-    const setFill = (arr) => doc.setFillColor(arr[0], arr[1], arr[2]);
-    const setDraw = (arr) => doc.setDrawColor(arr[0], arr[1], arr[2]);
-
-    // Grade colour
-    const gradeColorMap = { A: GREEN, B: GREEN, C: AMBER, D: AMBER, F: RED };
-    const gradeColor = gradeColorMap[identity.grade] || AMBER;
-
-    // Score colour
-    const scoreColor = (val) => val >= 70 ? GREEN : val >= 40 ? AMBER : RED;
-
-    const fmtK = (n) => {
-      const a = Math.abs(n);
-      if(a >= 1000000) return (a/1000000).toFixed(1) + 'M';
-      if(a >= 1000) return (a/1000).toFixed(1) + 'K';
-      return Math.round(a).toString();
-    };
-
-    // ── PAGE 1: COVER ──
-    // Dark background
-    setFill(DARK);
-    doc.rect(0, 0, W, H, 'F');
-
-    // Green accent bar top
-    setFill(GREEN);
-    doc.rect(0, 0, W, 2, 'F');
-
-    y = 18;
-    // Logo
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(22);
-    setRGB(GREEN);
-    doc.text('PesaCheck', MARGIN, y);
-
-    // Tagline
-    doc.setFontSize(8);
-    doc.setFont('helvetica', 'normal');
-    setRGB(TEXT3);
-    doc.text('FINANCIAL IDENTITY CARD', MARGIN, y + 6);
-
-    // Date right aligned
-    const today = new Date().toLocaleDateString('en-KE', { day: 'numeric', month: 'long', year: 'numeric' });
-    doc.text(today, W - MARGIN, y + 6, { align: 'right' });
-
-    // Divider
-    y += 12;
-    setFill(TEXT3);
-    doc.rect(MARGIN, y, COL, 0.3, 'F');
-
-    // ── SCORE HERO ──
-    y += 14;
-    // Large score circle (drawn as rounded rect)
-    const circleX = W / 2;
-    setFill(SURFACE);
-    doc.roundedRect(circleX - 28, y - 8, 56, 40, 4, 4, 'F');
-    setDraw(gradeColor);
-    doc.setLineWidth(1);
-    doc.roundedRect(circleX - 28, y - 8, 56, 40, 4, 4, 'S');
-    doc.setLineWidth(0.3);
-
-    // Score number
-    doc.setFont('courier', 'bold');
-    doc.setFontSize(36);
-    setRGB(gradeColor);
-    doc.text(`${identity.overall}`, circleX, y + 12, { align: 'center' });
-
-    // /100
-    doc.setFontSize(11);
-    setRGB(TEXT3);
-    doc.text('/100', circleX, y + 20, { align: 'center' });
-
-    // Grade letter — right side of circle
-    doc.setFontSize(28);
-    doc.setFont('courier', 'bold');
-    setRGB(gradeColor);
-    doc.text(identity.grade, circleX + 22, y + 14, { align: 'center' });
-    doc.setFontSize(8);
-    setRGB(TEXT3);
-    doc.text('GRADE', circleX + 22, y + 20, { align: 'center' });
-
-    y += 46;
-
-    // Verdict tag
-    setFill(gradeColor);
-    const tagW = 60, tagH = 7;
-    doc.roundedRect(circleX - tagW/2, y, tagW, tagH, 2, 2, 'F');
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(8);
-    setRGB(DARK);
-    doc.text(verdictTag.toUpperCase(), circleX, y + 5, { align: 'center' });
-
-    y += 14;
-    // Verdict title
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(13);
-    setRGB(WHITE);
-    const titleLines = doc.splitTextToSize(verdictTitle, COL);
-    doc.text(titleLines, circleX, y, { align: 'center' });
-    y += titleLines.length * 6 + 4;
-
-    // Source file
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(8);
-    setRGB(TEXT3);
-    doc.text(`Source: ${isDemo ? 'Demo Statement' : (filename || 'M-Pesa Statement')}  ·  ${txnCount} transactions  ·  Savings rate: ${savingsRate.toFixed(0)}%`, circleX, y, { align: 'center' });
-
-    // ── KEY METRICS BAND ──
-    y += 10;
-    const metrics = [
-      { label: 'MONEY IN',  val: 'KES ' + fmtK(totalIn),  color: GREEN },
-      { label: 'MONEY OUT', val: 'KES ' + fmtK(totalOut), color: RED },
-      { label: 'NET FLOW',  val: (netFlow >= 0 ? '+' : '-') + 'KES ' + fmtK(Math.abs(netFlow)), color: netFlow >= 0 ? GREEN : RED },
-      { label: 'SAVED',     val: savingsRate.toFixed(0) + '%', color: savingsRate >= 20 ? GREEN : savingsRate >= 10 ? AMBER : RED },
-    ];
-    const mW = COL / 4;
-    setFill(SURFACE);
-    doc.roundedRect(MARGIN, y, COL, 22, 3, 3, 'F');
-    metrics.forEach((m, i) => {
-      const mx = MARGIN + mW * i + mW / 2;
-      doc.setFont('courier', 'bold');
-      doc.setFontSize(12);
-      setRGB(m.color);
-      doc.text(m.val, mx, y + 9, { align: 'center' });
-      doc.setFont('helvetica', 'normal');
-      doc.setFontSize(7);
-      setRGB(TEXT3);
-      doc.text(m.label, mx, y + 15, { align: 'center' });
-      // Divider
-      if(i < 3){
-        setFill(TEXT3);
-        doc.rect(MARGIN + mW * (i+1), y + 3, 0.3, 16, 'F');
-      }
-    });
-
-    // ── SCORE BARS ──
-    y += 30;
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(9);
-    setRGB(GREEN);
-    doc.text('FINANCIAL IDENTITY SCORES', MARGIN, y);
-    setFill(GREEN);
-    doc.rect(MARGIN, y + 1.5, 35, 0.5, 'F');
-
-    y += 8;
-    identity.scores.forEach((score) => {
-      const c = scoreColor(score.val);
-      // Label
-      doc.setFont('helvetica', 'normal');
-      doc.setFontSize(9);
-      setRGB(TEXT2);
-      doc.text(score.name, MARGIN, y + 3.5);
-      // Bar track
-      setFill(SURFACE);
-      doc.roundedRect(MARGIN + 60, y, COL - 75, 5, 1, 1, 'F');
-      // Bar fill
-      setFill(c);
-      doc.roundedRect(MARGIN + 60, y, (COL - 75) * score.val / 100, 5, 1, 1, 'F');
-      // Score value
-      doc.setFont('courier', 'bold');
-      doc.setFontSize(9);
-      setRGB(c);
-      doc.text(`${score.val}/100`, W - MARGIN, y + 4, { align: 'right' });
-      y += 9;
-    });
-
-    // ── SPENDING BREAKDOWN ──
-    y += 6;
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(9);
-    setRGB(AMBER);
-    doc.text('SPENDING BREAKDOWN', MARGIN, y);
-    setFill(AMBER);
-    doc.rect(MARGIN, y + 1.5, 32, 0.5, 'F');
-
-    y += 8;
-    const topCats = catArr.slice(0, 6);
-    const maxAmt = topCats[0]?.amount || 1;
-    topCats.forEach((cat) => {
-      doc.setFont('helvetica', 'normal');
-      doc.setFontSize(8.5);
-      setRGB(TEXT2);
-      doc.text(cat.name, MARGIN, y + 3.5);
-      // Bar
-      setFill(SURFACE);
-      doc.roundedRect(MARGIN + 45, y, COL - 75, 5, 1, 1, 'F');
-      setFill(AMBER);
-      doc.roundedRect(MARGIN + 45, y, (COL - 75) * (cat.amount / maxAmt), 5, 1, 1, 'F');
-      // Amount
-      doc.setFont('courier', 'normal');
-      doc.setFontSize(8);
-      setRGB(WHITE);
-      doc.text(`KES ${fmtK(cat.amount)}  ${cat.pct.toFixed(0)}%`, W - MARGIN, y + 4, { align: 'right' });
-      y += 8;
-    });
-
-    // ── LOAN SPIRAL ALERT ──
-    if(spiral && spiral.isSpiral){
-      y += 4;
-      setFill([60, 15, 10]);
-      doc.roundedRect(MARGIN, y, COL, 18, 3, 3, 'F');
-      setDraw(RED);
-      doc.roundedRect(MARGIN, y, COL, 18, 3, 3, 'S');
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(9);
-      setRGB(RED);
-      doc.text('⚠ MULTI-LOAN SPIRAL DETECTED', MARGIN + 5, y + 6);
-      doc.setFont('helvetica', 'normal');
-      doc.setFontSize(8);
-      setRGB(WHITE);
-      const apps = spiral.apps.slice(0,4).join(', ');
-      doc.text(`Active loan apps: ${apps}${spiral.apps.length > 4 ? ` +${spiral.apps.length - 4} more` : ''}`, MARGIN + 5, y + 12);
-      doc.text(`Total borrowed: KES ${fmtK(spiral.totalBorrowed)}  ·  Estimated fees: KES ${fmtK(spiral.totalInterest)}`, MARGIN + 5, y + 17);
-      y += 24;
-    }
-
-    // ── INVISIBLE TAX ──
-    if(invisTaxTotal > 0){
-      setFill([50, 40, 10]);
-      doc.roundedRect(MARGIN, y, COL, 12, 3, 3, 'F');
-      setDraw(AMBER);
-      doc.roundedRect(MARGIN, y, COL, 12, 3, 3, 'S');
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(8.5);
-      setRGB(AMBER);
-      doc.text('INVISIBLE TAX', MARGIN + 5, y + 5);
-      doc.setFont('helvetica', 'normal');
-      setRGB(WHITE);
-      doc.text(`Hidden costs this period: KES ${fmtK(invisTaxTotal)}  ·  Annualised: KES ${fmtK(invisTaxTotal * 12)}`, MARGIN + 5, y + 10);
-      y += 18;
-    }
-
-    // ── FOOTER ──
-    y = H - 16;
-    setFill(TEXT3);
-    doc.rect(MARGIN, y, COL, 0.3, 'F');
-    y += 5;
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(7);
-    setRGB(TEXT3);
-    doc.text('PesaCheck  ·  pesacheck.vercel.app  ·  by WealthWise  ·  @wealthwisefinancestate', MARGIN, y);
-    doc.text('Financial education tool only — not licensed financial advice', W - MARGIN, y, { align: 'right' });
-
-    // ── PAGE 2: INSIGHTS & TRAJECTORY ──
-    doc.addPage();
-    setFill(DARK);
-    doc.rect(0, 0, W, H, 'F');
-    setFill(GREEN);
-    doc.rect(0, 0, W, 2, 'F');
-
-    y = 18;
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(14);
-    setRGB(WHITE);
-    doc.text('Insights & Action Plan', MARGIN, y);
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(8);
-    setRGB(TEXT3);
-    doc.text(`Financial Score: ${identity.overall}/100 (Grade ${identity.grade})  ·  ${today}`, MARGIN, y + 7);
-
-    y += 16;
-
-    // Insights from DOM
-    const insightEls = document.querySelectorAll('#az-insights .insight-item');
-    if(insightEls.length > 0){
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(9);
-      setRGB(GREEN);
-      doc.text('PERSONALISED INSIGHTS', MARGIN, y);
-      setFill(GREEN);
-      doc.rect(MARGIN, y + 1.5, 36, 0.5, 'F');
-      y += 9;
-
-      insightEls.forEach((el, i) => {
-        const num = el.querySelector('.insight-num')?.textContent || String(i+1).padStart(2,'0');
-        const text = el.textContent.replace(num, '').trim().replace(/<[^>]+>/g, '');
-        const lines = doc.splitTextToSize(text, COL - 14);
-
-        setFill(SURFACE);
-        doc.roundedRect(MARGIN, y - 1, COL, lines.length * 4.5 + 6, 2, 2, 'F');
-
-        doc.setFont('courier', 'bold');
-        doc.setFontSize(8);
-        setRGB(GREEN);
-        doc.text(num, MARGIN + 4, y + 4);
-
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(8);
-        setRGB(WHITE);
-        doc.text(lines, MARGIN + 12, y + 4);
-
-        y += lines.length * 4.5 + 10;
-        if(y > H - 50) { doc.addPage(); setFill(DARK); doc.rect(0,0,W,H,'F'); y = 20; }
-      });
-    }
-
-    // 12-month projection summary
-    y += 4;
-    if(y > H - 60){ doc.addPage(); setFill(DARK); doc.rect(0,0,W,H,'F'); y = 20; }
-
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(9);
-    setRGB(BLUE);
-    doc.text('12-MONTH FINANCIAL TRAJECTORY', MARGIN, y);
-    setFill(BLUE);
-    doc.rect(MARGIN, y + 1.5, 50, 0.5, 'F');
-
-    y += 9;
-    const traj = d.traj;
-    if(traj && traj.current && traj.optimized){
-      const projCols = [
-        { label: '3 months (current)', val: traj.current[3], c: traj.current[3] >= 0 ? GREEN : RED },
-        { label: '6 months (current)', val: traj.current[6], c: traj.current[6] >= 0 ? GREEN : RED },
-        { label: '6 months (optimized)', val: traj.optimized[6], c: GREEN },
-        { label: '12 months (optimized)', val: traj.optimized[12], c: GREEN },
-      ];
-      const pW = COL / 2 - 3;
-      projCols.forEach((p, i) => {
-        const px = MARGIN + (i % 2) * (pW + 6);
-        const py = y + Math.floor(i/2) * 20;
-        setFill(SURFACE);
-        doc.roundedRect(px, py, pW, 16, 2, 2, 'F');
-        doc.setFont('courier', 'bold');
-        doc.setFontSize(12);
-        setRGB(p.c);
-        const sign = p.val >= 0 ? '+' : '-';
-        doc.text(`${sign}KES ${fmtK(Math.abs(p.val))}`, px + pW/2, py + 8, { align: 'center' });
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(7);
-        setRGB(TEXT3);
-        doc.text(p.label.toUpperCase(), px + pW/2, py + 13, { align: 'center' });
-      });
-      y += 45;
-    }
-
-    // What-if section
-    y += 4;
-    setFill(SURFACE);
-    doc.roundedRect(MARGIN, y, COL, 28, 3, 3, 'F');
-    setDraw(GREEN);
-    doc.roundedRect(MARGIN, y, COL, 28, 3, 3, 'S');
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(9);
-    setRGB(GREEN);
-    doc.text('WHAT IF YOU OPTIMISED?', MARGIN + 5, y + 7);
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(8.5);
-    setRGB(WHITE);
-    const topCatName = catArr[0]?.name || 'top spending category';
-    const topCatAmt = catArr[0]?.amount || 0;
-    const saving20 = topCatAmt * 0.2;
-    doc.text(`Cutting ${topCatName} by 20% saves KES ${fmtK(saving20)}/month`, MARGIN + 5, y + 14);
-    doc.text(`That\'s KES ${fmtK(saving20 * 12)}/year — invested at 14% for 5 years = KES ${fmtK(saving20 * 12 * 5 * 1.4)}`, MARGIN + 5, y + 21);
-
-    // Final footer
-    y = H - 16;
-    setFill(TEXT3);
-    doc.rect(MARGIN, y, COL, 0.3, 'F');
-    y += 5;
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(7);
-    setRGB(TEXT3);
-    doc.text('PesaCheck  ·  pesacheck.vercel.app  ·  by WealthWise  ·  investwithwealthwise@gmail.com', MARGIN, y);
-    doc.text('Generated ' + today + '  ·  For personal use only — not financial advice', W - MARGIN, y, { align: 'right' });
-
-    // ── SAVE ──
-    const safeName = (filename || 'mpesa-statement').replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
-    doc.save(`pesacheck-financial-identity-${safeName}.pdf`);
-
-    if(btn){ btn.textContent = '✓ PDF Downloaded'; setTimeout(() => { btn.textContent = '↓ Export PDF'; btn.disabled = false; }, 3000); }
-
-  } catch(err) {
-    console.error('[PDF Export] Error:', err);
-    if(btn){ btn.textContent = '↓ Export PDF'; btn.disabled = false; }
-    alert('PDF generation failed: ' + err.message + '\n\nTry again or contact investwithwealthwise@gmail.com');
-  }
+  if(!azLastData){ alert('Please analyze a statement first.'); return; }
+  if(typeof window.jspdf==='undefined'&&typeof jsPDF==='undefined'){ alert('PDF library loading. Try again in a moment.'); return; }
+  const btn=document.getElementById('az-pdf-btn');
+  if(btn){ btn.textContent='Generating...'; btn.disabled=true; }
+  try{
+    const{jsPDF}=window.jspdf||{jsPDF:window.jsPDF};
+    const d=azLastData;
+    const doc=new jsPDF({orientation:'portrait',unit:'mm',format:'a4'});
+    const W=210,M=15,C=W-M*2;
+    let y=0;
+    const GREEN=[46,204,138],DARK=[10,10,8],SURF=[17,17,16],T2=[158,155,146],T3=[92,90,84],RED=[232,93,74],AMBER=[245,166,35],WHITE=[242,239,230];
+    const sc=d.identity.overallScore>=70?GREEN:d.identity.overallScore>=40?AMBER:RED;
+    const fmtK=n=>{ const a=Math.abs(n); if(a>=1e6) return (a/1e6).toFixed(1)+'M'; if(a>=1000) return (a/1000).toFixed(1)+'K'; return Math.round(a)+''; };
+    // Background
+    doc.setFillColor(...DARK); doc.rect(0,0,W,297,'F');
+    doc.setFillColor(...GREEN); doc.rect(0,0,W,2,'F');
+    y=18;
+    doc.setFont('helvetica','bold'); doc.setFontSize(22); doc.setTextColor(...GREEN); doc.text('PesaCheck',M,y);
+    doc.setFontSize(8); doc.setFont('helvetica','normal'); doc.setTextColor(...T3); doc.text('FINANCIAL IDENTITY CARD',M,y+6);
+    doc.text(new Date().toLocaleDateString('en-KE',{day:'numeric',month:'long',year:'numeric'}),W-M,y+6,{align:'right'});
+    y+=12; doc.setFillColor(...T3); doc.rect(M,y,C,0.3,'F');
+    y+=14;
+    // Score
+    doc.setFillColor(...SURF); doc.roundedRect(W/2-26,y-6,52,36,4,4,'F');
+    doc.setDrawColor(...sc); doc.setLineWidth(0.8); doc.roundedRect(W/2-26,y-6,52,36,4,4,'S'); doc.setLineWidth(0.3);
+    doc.setFont('courier','bold'); doc.setFontSize(32); doc.setTextColor(...sc); doc.text(String(d.identity.overall),W/2,y+10,{align:'center'});
+    doc.setFontSize(10); doc.setTextColor(...T3); doc.text('/100',W/2,y+18,{align:'center'});
+    doc.setFontSize(24); doc.setFont('courier','bold'); doc.setTextColor(...sc); doc.text(d.identity.grade,W/2+20,y+12,{align:'center'});
+    y+=42;
+    // Verdict
+    doc.setFillColor(...sc); doc.roundedRect(W/2-28,y,56,7,2,2,'F');
+    doc.setFont('helvetica','bold'); doc.setFontSize(8); doc.setTextColor(...DARK); doc.text((d.verdictTag||'').toUpperCase(),W/2,y+5,{align:'center'});
+    y+=12; doc.setFont('helvetica','bold'); doc.setFontSize(12); doc.setTextColor(...WHITE);
+    const tl=doc.splitTextToSize(d.verdictTitle||'',C); doc.text(tl,W/2,y,{align:'center'}); y+=tl.length*5+4;
+    doc.setFont('helvetica','normal'); doc.setFontSize(8); doc.setTextColor(...T3);
+    doc.text(`${d.txnCount} transactions  ·  ${(d.savingsRate||0).toFixed(0)}% savings rate  ·  Score: ${d.identity.overall}/100`,W/2,y,{align:'center'}); y+=10;
+    // Metrics band
+    const metrics=[{l:'MONEY IN',v:'KES '+fmtK(d.totalIn),c:GREEN},{l:'MONEY OUT',v:'KES '+fmtK(d.totalOut),c:RED},{l:'NET FLOW',v:(d.netFlow>=0?'+':'-')+'KES '+fmtK(Math.abs(d.netFlow)),c:d.netFlow>=0?GREEN:RED},{l:'SAVED',v:(d.savingsRate||0).toFixed(0)+'%',c:d.savingsRate>=20?GREEN:d.savingsRate>=10?AMBER:RED}];
+    const mW=C/4; doc.setFillColor(...SURF); doc.roundedRect(M,y,C,22,3,3,'F');
+    metrics.forEach((m,i)=>{ const mx=M+mW*i+mW/2; doc.setFont('courier','bold'); doc.setFontSize(11); doc.setTextColor(...m.c); doc.text(m.v,mx,y+9,{align:'center'}); doc.setFont('helvetica','normal'); doc.setFontSize(7); doc.setTextColor(...T3); doc.text(m.l,mx,y+15,{align:'center'}); if(i<3){ doc.setFillColor(...T3); doc.rect(M+mW*(i+1),y+3,0.3,16,'F'); } }); y+=30;
+    // Score bars
+    doc.setFont('helvetica','bold'); doc.setFontSize(9); doc.setTextColor(...GREEN); doc.text('IDENTITY SCORES',M,y); doc.setFillColor(...GREEN); doc.rect(M,y+1.5,28,0.5,'F'); y+=8;
+    (d.identity.scores||[]).forEach(s=>{ const c=s.val>=70?GREEN:s.val>=40?AMBER:RED; doc.setFont('helvetica','normal'); doc.setFontSize(9); doc.setTextColor(...T2); doc.text(s.name,M,y+3.5); doc.setFillColor(...SURF); doc.roundedRect(M+58,y,C-72,5,1,1,'F'); doc.setFillColor(...c); doc.roundedRect(M+58,y,(C-72)*s.val/100,5,1,1,'F'); doc.setFont('courier','bold'); doc.setFontSize(9); doc.setTextColor(...c); doc.text(`${s.val}/100`,W-M,y+4,{align:'right'}); y+=9; }); y+=4;
+    // Categories
+    doc.setFont('helvetica','bold'); doc.setFontSize(9); doc.setTextColor(...AMBER); doc.text('TOP SPENDING',M,y); doc.setFillColor(...AMBER); doc.rect(M,y+1.5,22,0.5,'F'); y+=8;
+    const maxA=(d.catArr[0]?.amount||1);
+    (d.catArr||[]).slice(0,6).forEach(c=>{ doc.setFont('helvetica','normal'); doc.setFontSize(8); doc.setTextColor(...T2); doc.text(c.name,M,y+3.5); doc.setFillColor(...SURF); doc.roundedRect(M+43,y,C-58,5,1,1,'F'); doc.setFillColor(...AMBER); doc.roundedRect(M+43,y,(C-58)*(c.amount/maxA),5,1,1,'F'); doc.setFont('courier','normal'); doc.setFontSize(8); doc.setTextColor(...WHITE); doc.text(`KES ${fmtK(c.amount)}  ${(c.pct||0).toFixed(0)}%`,W-M,y+4,{align:'right'}); y+=8; });
+    // Footer
+    doc.setFillColor(...T3); doc.rect(M,280,C,0.3,'F'); doc.setFont('helvetica','normal'); doc.setFontSize(7); doc.setTextColor(...T3);
+    doc.text('PesaCheck  ·  pesacheck.vercel.app  ·  by WealthWise  ·  investwithwealthwise@gmail.com',M,285);
+    doc.text('Financial education only — not financial advice',W-M,285,{align:'right'});
+    const fn=(d.filename||'statement').replace(/[^a-zA-Z0-9]/g,'-').toLowerCase();
+    doc.save('pesacheck-financial-identity-'+fn+'.pdf');
+    if(btn){ btn.textContent='✓ PDF Downloaded'; setTimeout(()=>{ btn.textContent='↓ Export PDF'; btn.disabled=false; },3000); }
+  }catch(err){ console.error('[PDF]',err); if(btn){ btn.textContent='↓ Export PDF'; btn.disabled=false; } alert('PDF error: '+err.message); }
 }
 
+// ═══ MONTH-OVER-MONTH COMPARISON ═══
+const CMP_KEY='pesacheck-snapshots-v1';
+function cmpLoadSnapshots(){ try{ return JSON.parse(localStorage.getItem(CMP_KEY)||'[]'); }catch(e){ return []; } }
+function cmpSaveSnapshots(s){ try{ localStorage.setItem(CMP_KEY,JSON.stringify(s)); }catch(e){} }
 
-// ═══════════════════════════════════════════════════════
-// MONTH-OVER-MONTH COMPARISON SYSTEM
-// Stores analysis snapshots in localStorage
-// Compares any two months side by side
-// ═══════════════════════════════════════════════════════
-
-const CMP_STORAGE_KEY = 'pesacheck-snapshots-v1';
-const CMP_MAX_SNAPSHOTS = 12; // Keep up to 12 months
-
-// ── Save a snapshot after analysis ──
 function azSaveSnapshot(){
   if(!azLastData) return;
-  const d = azLastData;
-
-  // Build lean snapshot — only what we need for comparison
-  const snapshot = {
-    id: Date.now(),
-    savedAt: new Date().toISOString(),
-    label: new Date().toLocaleDateString('en-KE', { month: 'long', year: 'numeric' }),
-    filename: d.filename || 'Statement',
-    isDemo: d.isDemo || false,
-    // Core metrics
-    totalIn: Math.round(d.totalIn),
-    totalOut: Math.round(d.totalOut),
-    netFlow: Math.round(d.netFlow),
-    savingsRate: Math.round(d.savingsRate * 10) / 10,
-    txnCount: d.txnCount,
-    // Identity scores
-    overallScore: d.identity.overall,
-    grade: d.identity.grade,
-    scores: d.identity.scores.map(s => ({ name: s.name, val: s.val })),
-    // Top spending categories
-    categories: d.catArr.slice(0, 8).map(c => ({ name: c.name, amount: Math.round(c.amount), pct: Math.round(c.pct * 10) / 10 })),
-    // Alerts
-    hasSpiral: d.spiral?.isSpiral || false,
-    spiralApps: d.spiral?.apps || [],
-    invisTaxTotal: Math.round(d.invisTaxTotal || 0),
-    verdictTag: d.verdictTag,
-  };
-
-  // Load existing snapshots
-  let snapshots = cmpLoadSnapshots();
-
-  // Remove demo snapshots if saving a real one
-  if(!snapshot.isDemo) {
-    snapshots = snapshots.filter(s => !s.isDemo);
-  }
-
-  // Add new snapshot at the front
-  snapshots.unshift(snapshot);
-
-  // Keep max 12 months
-  if(snapshots.length > CMP_MAX_SNAPSHOTS) {
-    snapshots = snapshots.slice(0, CMP_MAX_SNAPSHOTS);
-  }
-
-  cmpSaveSnapshots(snapshots);
-
-  // UI feedback
-  document.getElementById('az-compare-bar').style.display = 'none';
-  const savedMsg = document.getElementById('az-snapshot-saved');
-  if(savedMsg) { savedMsg.style.display = 'block'; }
-
-  console.log('[Compare] Snapshot saved:', snapshot.label, '— Total:', snapshots.length, 'months');
+  const d=azLastData;
+  const snap={id:Date.now(),savedAt:new Date().toISOString(),label:new Date().toLocaleDateString('en-KE',{month:'long',year:'numeric'}),filename:d.filename||'Statement',isDemo:d.isDemo||false,totalIn:Math.round(d.totalIn),totalOut:Math.round(d.totalOut),netFlow:Math.round(d.netFlow),savingsRate:Math.round(d.savingsRate*10)/10,txnCount:d.txnCount,overallScore:d.identity.overall,grade:d.identity.grade,scores:d.identity.scores.map(s=>({name:s.name,val:s.val})),categories:(d.catArr||[]).slice(0,8).map(c=>({name:c.name,amount:Math.round(c.amount),pct:Math.round(c.pct*10)/10})),verdictTag:d.verdictTag};
+  let snaps=cmpLoadSnapshots(); if(!snap.isDemo) snaps=snaps.filter(s=>!s.isDemo); snaps.unshift(snap); if(snaps.length>12) snaps=snaps.slice(0,12); cmpSaveSnapshots(snaps);
+  const bar=document.getElementById('az-compare-bar'); if(bar) bar.style.display='none';
+  const ok=document.getElementById('az-snapshot-saved'); if(ok) ok.style.display='block';
 }
 
-// ── Storage helpers ──
-function cmpLoadSnapshots(){
-  try {
-    return JSON.parse(localStorage.getItem(CMP_STORAGE_KEY) || '[]');
-  } catch(e) { return []; }
-}
-
-function cmpSaveSnapshots(snapshots){
-  try {
-    localStorage.setItem(CMP_STORAGE_KEY, JSON.stringify(snapshots));
-  } catch(e) {
-    console.error('[Compare] Storage failed — localStorage may be full');
-  }
-}
-
-// ── Show compare bar after analysis ──
 function azShowCompareBar(){
-  const snapshots = cmpLoadSnapshots();
-  const bar = document.getElementById('az-compare-bar');
-  if(!bar) return;
-
-  if(snapshots.length === 0){
-    // First analysis — prompt to save
-    bar.style.display = 'flex';
-    bar.querySelector('.compare-bar-text').innerHTML = '<strong>📅 Save this month\'s results?</strong><br>Save now, then upload next month\'s statement to track your financial progress.';
-  } else {
-    // Has previous snapshots — prompt to save and compare
-    bar.style.display = 'flex';
-    bar.querySelector('.compare-bar-text').innerHTML = `<strong>📅 ${snapshots.length} saved snapshot${snapshots.length > 1 ? 's' : ''} found</strong><br>Save this month and compare with ${snapshots[0].label} to see what changed.`;
-  }
+  const bar=document.getElementById('az-compare-bar'); if(!bar) return;
+  const n=cmpLoadSnapshots().length;
+  bar.style.display='flex';
+  bar.querySelector('.compare-bar-text').innerHTML=n===0?'<strong>📅 Save this month\'s results?</strong><br>Save now, then compare with next month to track progress.':'<strong>📅 '+n+' snapshot'+(n>1?'s':'')+' saved.</strong><br>Save this month and compare with previous months.';
 }
 
-// ── Navigate to compare page ──
-function goToCompare(){
-  navigate('compare');
-  cmpRenderPage();
-}
-
-// ── Render the compare page ──
-let cmpSelectedThis = null;
-let cmpSelectedLast = null;
-
+let cmpSelThis=null,cmpSelLast=null;
 function cmpRenderPage(){
-  const snapshots = cmpLoadSnapshots();
-  const empty = document.getElementById('cmp-empty');
-  const main = document.getElementById('cmp-main');
-
-  if(!empty || !main) return;
-
-  if(snapshots.length === 0){
-    empty.style.display = 'block';
-    main.style.display = 'none';
-    return;
-  }
-
-  empty.style.display = 'none';
-  main.style.display = 'block';
-  cmpSelectedThis = null;
-  cmpSelectedLast = null;
-  document.getElementById('cmp-results').style.display = 'none';
-  document.getElementById('cmp-compare-btn').style.display = 'none';
-
-  // Render snapshot selector lists
-  const renderList = (containerId, onSelect) => {
-    const container = document.getElementById(containerId);
-    if(!container) return;
-    container.innerHTML = snapshots.map(s => `
-      <div class="snapshot-item" id="${containerId}-${s.id}" onclick="${onSelect}(${s.id})">
-        <div>
-          <div class="snapshot-date">${s.label}${s.isDemo ? ' (demo)' : ''}</div>
-          <div class="snapshot-meta">${s.filename} · ${s.txnCount} txns · Saved ${new Date(s.savedAt).toLocaleDateString('en-KE')}</div>
-        </div>
-        <div>
-          <div class="snapshot-score" style="color:${s.overallScore >= 70 ? 'var(--green)' : s.overallScore >= 40 ? 'var(--amber)' : 'var(--red)'}">${s.overallScore}</div>
-          <div style="font-size:9px;color:var(--text3);font-family:DM Mono,monospace;text-align:right">SCORE</div>
-        </div>
-      </div>`).join('');
-  };
-
-  renderList('cmp-this-list', 'cmpSelectThis');
-  renderList('cmp-last-list', 'cmpSelectLast');
-
-  // Manage list
-  const manageContainer = document.getElementById('cmp-manage-list');
-  if(manageContainer){
-    manageContainer.innerHTML = snapshots.map(s => `
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:0.5px solid var(--border);font-size:12px">
-        <div>
-          <span style="font-weight:600;color:var(--text)">${s.label}</span>
-          <span style="color:var(--text3);font-family:DM Mono,monospace;margin-left:8px">${s.overallScore}/100</span>
-        </div>
-        <button onclick="cmpDeleteSnapshot(${s.id})" style="font-size:11px;color:var(--red);background:none;border:none;cursor:pointer;padding:4px 8px">Delete</button>
-      </div>`).join('');
-  }
+  const snaps=cmpLoadSnapshots();
+  const empty=document.getElementById('cmp-empty');
+  const main=document.getElementById('cmp-main');
+  if(!empty||!main) return;
+  if(snaps.length===0){ empty.style.display='block'; main.style.display='none'; return; }
+  empty.style.display='none'; main.style.display='block';
+  cmpSelThis=null; cmpSelLast=null;
+  document.getElementById('cmp-results').style.display='none';
+  document.getElementById('cmp-compare-btn').style.display='none';
+  const mkList=(cid,fn)=>{ const el=document.getElementById(cid); if(!el) return; el.innerHTML=snaps.map(s=>`<div class="snapshot-item" id="${cid}-${s.id}" onclick="${fn}(${s.id})" style="cursor:pointer"><div><div style="font-size:12px;font-weight:700;color:var(--text)">${s.label}${s.isDemo?' (demo)':''}</div><div style="font-size:11px;color:var(--text3);font-family:DM Mono,monospace">${s.txnCount} txns · ${new Date(s.savedAt).toLocaleDateString('en-KE')}</div></div><div style="font-size:18px;font-weight:800;font-family:DM Mono,monospace;color:${s.overallScore>=70?'var(--green)':s.overallScore>=40?'var(--amber)':'var(--red)'}">${s.overallScore}</div></div>`).join(''); };
+  mkList('cmp-this-list','cmpSelectThis');
+  mkList('cmp-last-list','cmpSelectLast');
+  const ml=document.getElementById('cmp-manage-list'); if(ml) ml.innerHTML=snaps.map(s=>`<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:0.5px solid var(--border);font-size:12px"><span style="font-weight:600;color:var(--text)">${s.label}</span><span style="color:var(--text3);font-family:DM Mono,monospace;margin-left:8px">${s.overallScore}/100</span><button onclick="cmpDel(${s.id})" style="font-size:11px;color:var(--red);background:none;border:none;cursor:pointer;padding:4px 8px">Delete</button></div>`).join('');
 }
 
-function cmpSelectThis(id){
-  cmpSelectedThis = id;
-  document.querySelectorAll('[id^="cmp-this-list-"]').forEach(el => el.classList.remove('selected'));
-  const el = document.getElementById(`cmp-this-list-${id}`);
-  if(el) el.classList.add('selected');
-  cmpCheckReady();
-}
+function cmpSelectThis(id){ cmpSelThis=id; document.querySelectorAll('[id^="cmp-this-list-"]').forEach(e=>e.classList.remove('selected')); const e=document.getElementById('cmp-this-list-'+id); if(e) e.classList.add('selected'); cmpChk(); }
+function cmpSelectLast(id){ cmpSelLast=id; document.querySelectorAll('[id^="cmp-last-list-"]').forEach(e=>e.classList.remove('selected')); const e=document.getElementById('cmp-last-list-'+id); if(e) e.classList.add('selected'); cmpChk(); }
+function cmpChk(){ const b=document.getElementById('cmp-compare-btn'); if(b) b.style.display=(cmpSelThis&&cmpSelLast&&cmpSelThis!==cmpSelLast)?'block':'none'; }
 
-function cmpSelectLast(id){
-  cmpSelectedLast = id;
-  document.querySelectorAll('[id^="cmp-last-list-"]').forEach(el => el.classList.remove('selected'));
-  const el = document.getElementById(`cmp-last-list-${id}`);
-  if(el) el.classList.add('selected');
-  cmpCheckReady();
-}
-
-function cmpCheckReady(){
-  const btn = document.getElementById('cmp-compare-btn');
-  if(!btn) return;
-  if(cmpSelectedThis && cmpSelectedLast && cmpSelectedThis !== cmpSelectedLast){
-    btn.style.display = 'block';
-  } else {
-    btn.style.display = 'none';
-  }
-}
-
-// ── Run the actual comparison ──
 function cmpRunComparison(){
-  const snapshots = cmpLoadSnapshots();
-  const thisSnap = snapshots.find(s => s.id === cmpSelectedThis);
-  const lastSnap = snapshots.find(s => s.id === cmpSelectedLast);
-  if(!thisSnap || !lastSnap) return;
-
-  const results = document.getElementById('cmp-results');
-  results.style.display = 'block';
-
-  // Helper: delta text + class
-  const delta = (now, prev, higherIsBetter = true) => {
-    const diff = now - prev;
-    const pct = prev !== 0 ? Math.round((diff / Math.abs(prev)) * 100) : 0;
-    if(diff === 0) return { text: '→ No change', cls: 'neutral' };
-    const arrow = diff > 0 ? '↑' : '↓';
-    const good = (diff > 0) === higherIsBetter;
-    return {
-      text: `${arrow} ${Math.abs(pct)}% ${diff > 0 ? 'more' : 'less'}`,
-      cls: good ? 'up' : 'down'
-    };
-  };
-
-  // ── Score comparison ──
-  const scoreDelta = delta(thisSnap.overallScore, lastSnap.overallScore);
-  const scoreImproved = thisSnap.overallScore > lastSnap.overallScore;
-  document.getElementById('cmp-score-row').innerHTML = `
-    <div class="compare-metric" style="flex:1;min-width:120px">
-      <div style="font-size:10px;color:var(--text3);font-family:DM Mono,monospace;text-transform:uppercase;margin-bottom:4px">${lastSnap.label}</div>
-      <div class="compare-metric-val" style="color:${lastSnap.overallScore>=70?'var(--green)':lastSnap.overallScore>=40?'var(--amber)':'var(--red)'}">${lastSnap.overallScore}<span style="font-size:12px;font-weight:400;color:var(--text3)">/100</span></div>
-      <div style="font-size:11px;color:var(--text3);font-family:DM Mono,monospace;margin-top:2px">Grade ${lastSnap.grade}</div>
-    </div>
-    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:.5rem;font-size:24px">${scoreImproved ? '→✅' : thisSnap.overallScore === lastSnap.overallScore ? '→' : '→⚠️'}</div>
-    <div class="compare-metric" style="flex:1;min-width:120px">
-      <div style="font-size:10px;color:var(--blue);font-family:DM Mono,monospace;text-transform:uppercase;margin-bottom:4px">${thisSnap.label}</div>
-      <div class="compare-metric-val" style="color:${thisSnap.overallScore>=70?'var(--green)':thisSnap.overallScore>=40?'var(--amber)':'var(--red)'}">${thisSnap.overallScore}<span style="font-size:12px;font-weight:400;color:var(--text3)">/100</span></div>
-      <div style="font-size:11px;color:var(--text3);font-family:DM Mono,monospace;margin-top:2px">Grade ${thisSnap.grade}</div>
-    </div>
-    <div class="compare-metric" style="flex:1;min-width:100px;background:${scoreImproved?'var(--green-bg)':thisSnap.overallScore===lastSnap.overallScore?'var(--surface2)':'var(--red-bg)'}">
-      <div style="font-size:10px;color:var(--text3);font-family:DM Mono,monospace;text-transform:uppercase;margin-bottom:4px">Change</div>
-      <div class="compare-metric-val" style="color:${scoreImproved?'var(--green)':thisSnap.overallScore===lastSnap.overallScore?'var(--text3)':'var(--red)'}">${thisSnap.overallScore - lastSnap.overallScore > 0 ? '+' : ''}${thisSnap.overallScore - lastSnap.overallScore}</div>
-      <div class="compare-metric-delta ${scoreDelta.cls}">${scoreDelta.text}</div>
-    </div>`;
-
-  // ── Key metrics ──
-  const metrics = [
-    { label:'Money In',    thisVal:thisSnap.totalIn,    lastVal:lastSnap.totalIn,    higher:true,  format:'KES' },
-    { label:'Money Out',   thisVal:thisSnap.totalOut,   lastVal:lastSnap.totalOut,   higher:false, format:'KES' },
-    { label:'Net Flow',    thisVal:thisSnap.netFlow,    lastVal:lastSnap.netFlow,    higher:true,  format:'KES_SIGN' },
-    { label:'Savings Rate',thisVal:thisSnap.savingsRate,lastVal:lastSnap.savingsRate,higher:true,  format:'PCT' },
-  ];
-
-  document.getElementById('cmp-metrics-row').innerHTML = metrics.map(m => {
-    const d = delta(m.thisVal, m.lastVal, m.higher);
-    const fmtVal = (v) => {
-      if(m.format === 'PCT') return v.toFixed(0) + '%';
-      if(m.format === 'KES_SIGN') return (v >= 0 ? '+' : '-') + 'KES ' + fmtShort(Math.abs(v));
-      return 'KES ' + fmtShort(Math.abs(v));
-    };
-    const c = d.cls === 'up' ? 'var(--green)' : d.cls === 'down' ? 'var(--red)' : 'var(--text3)';
-    return `<div class="compare-metric">
-      <div class="compare-metric-lbl">${m.label}</div>
-      <div class="compare-metric-val" style="color:${c};font-size:15px">${fmtVal(m.thisVal)}</div>
-      <div style="font-size:11px;color:var(--text3);font-family:DM Mono,monospace;margin-top:2px">was ${fmtVal(m.lastVal)}</div>
-      <div class="compare-metric-delta ${d.cls}">${d.text}</div>
-    </div>`;
-  }).join('');
-
-  // ── Category comparison ──
-  const allCatNames = [...new Set([
-    ...thisSnap.categories.map(c => c.name),
-    ...lastSnap.categories.map(c => c.name)
-  ])];
-
-  const catRows = allCatNames.map(name => {
-    const thisCat = thisSnap.categories.find(c => c.name === name);
-    const lastCat = lastSnap.categories.find(c => c.name === name);
-    const thisAmt = thisCat?.amount || 0;
-    const lastAmt = lastCat?.amount || 0;
-    const diff = thisAmt - lastAmt;
-    const arrow = diff > 500 ? '↑' : diff < -500 ? '↓' : '→';
-    const arrowColor = diff > 500 ? 'var(--red)' : diff < -500 ? 'var(--green)' : 'var(--text3)';
-    return { name, thisAmt, lastAmt, diff, arrow, arrowColor };
-  }).sort((a, b) => b.thisAmt - a.thisAmt);
-
-  document.getElementById('cmp-cats-table').innerHTML =
-    '<div style="display:flex;gap:8px;font-size:10px;color:var(--text3);font-family:DM Mono,monospace;text-transform:uppercase;padding-bottom:8px;border-bottom:0.5px solid var(--border);margin-bottom:4px">' +
-    '<div style="flex:1">Category</div><div style="min-width:70px;text-align:right">' + lastSnap.label.split(' ')[0] + '</div><div style="min-width:30px;text-align:center">Δ</div><div style="min-width:70px;text-align:right">' + thisSnap.label.split(' ')[0] + '</div></div>' +
-    catRows.map(c => `
-      <div class="compare-cat-row">
-        <div class="compare-cat-name">${c.name}</div>
-        <div class="compare-cat-last">${c.lastAmt > 0 ? 'KES ' + fmtShort(c.lastAmt) : '—'}</div>
-        <div class="compare-cat-arrow" style="color:${c.arrowColor}">${c.arrow}</div>
-        <div class="compare-cat-this" style="color:${c.diff > 500 ? 'var(--red)' : c.diff < -500 ? 'var(--green)' : 'var(--text)'}">${c.thisAmt > 0 ? 'KES ' + fmtShort(c.thisAmt) : '—'}</div>
-      </div>`).join('');
-
-  // ── Identity score bars comparison ──
-  const allScoreNames = thisSnap.scores.map(s => s.name);
-  document.getElementById('cmp-scores-bars').innerHTML = allScoreNames.map(name => {
-    const thisScore = thisSnap.scores.find(s => s.name === name);
-    const lastScore = lastSnap.scores.find(s => s.name === name);
-    const tv = thisScore?.val || 0;
-    const lv = lastScore?.val || 0;
-    const diff = tv - lv;
-    const c = tv >= 70 ? 'var(--green)' : tv >= 40 ? 'var(--amber)' : 'var(--red)';
-    return `<div style="margin-bottom:1rem">
-      <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px">
-        <span style="color:var(--text2)">${name}</span>
-        <span style="font-family:DM Mono,monospace;color:${diff>0?'var(--green)':diff<0?'var(--red)':'var(--text3)'}">
-          ${diff > 0 ? '+' : ''}${diff !== 0 ? diff : '→'} (${tv}/100)
-        </span>
-      </div>
-      <div style="position:relative;height:6px;background:var(--surface3);border-radius:99px;overflow:hidden">
-        <div style="height:6px;border-radius:99px;background:var(--text3);opacity:.4;width:${lv}%;position:absolute;top:0;left:0"></div>
-        <div style="height:6px;border-radius:99px;background:${c};width:${tv}%;position:absolute;top:0;left:0;transition:width .6s ease"></div>
-      </div>
-      <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--text3);font-family:DM Mono,monospace;margin-top:2px">
-        <span>was ${lv}</span><span>now ${tv}</span>
-      </div>
-    </div>`;
-  }).join('');
-
-  // ── Insights ──
-  const insights = [];
-  const scoreDiff = thisSnap.overallScore - lastSnap.overallScore;
-  if(scoreDiff > 5) insights.push(`<strong>Your financial health score improved by ${scoreDiff} points</strong> from ${lastSnap.overallScore} to ${thisSnap.overallScore}. ${thisSnap.overallScore >= 70 ? 'You are now in the healthy range.' : 'Keep going — the target is 70+.'}`);
-  else if(scoreDiff < -5) insights.push(`<strong>Your score dropped by ${Math.abs(scoreDiff)} points</strong> from ${lastSnap.overallScore} to ${thisSnap.overallScore}. Identify which category score fell the most and focus your efforts there next month.`);
-  else insights.push(`Your score held steady at approximately ${thisSnap.overallScore}/100. Consistency is good — now push for improvement in your lowest-scoring category.`);
-
-  const biggestIncrease = catRows.filter(c => c.diff > 1000).sort((a,b) => b.diff - a.diff)[0];
-  const biggestDecrease = catRows.filter(c => c.diff < -1000).sort((a,b) => a.diff - b.diff)[0];
-  if(biggestIncrease) insights.push(`<strong>${biggestIncrease.name} spending increased by KES ${fmtShort(biggestIncrease.diff)}</strong> — the largest increase this month. This is where to focus if you want to reduce spending.`);
-  if(biggestDecrease) insights.push(`<strong>${biggestDecrease.name} spending decreased by KES ${fmtShort(Math.abs(biggestDecrease.diff))}</strong> — great progress. This saving contributed directly to your improved net flow.`);
-
-  const savingsDiff = thisSnap.savingsRate - lastSnap.savingsRate;
-  if(savingsDiff > 2) insights.push(`Savings rate improved from ${lastSnap.savingsRate.toFixed(0)}% to ${thisSnap.savingsRate.toFixed(0)}% — ${(savingsDiff).toFixed(0)} percentage points better. At this pace, you reach the 20% target in ${Math.ceil((20 - thisSnap.savingsRate) / Math.max(savingsDiff, 0.5))} months.`);
-  else if(savingsDiff < -2) insights.push(`Savings rate dropped from ${lastSnap.savingsRate.toFixed(0)}% to ${thisSnap.savingsRate.toFixed(0)}%. Review what extra expenses appeared this month that did not exist last month.`);
-
-  document.getElementById('cmp-insights').innerHTML = insights.map((ins, i) =>
-    `<div class="insight-item"><div class="insight-num">0${i+1}</div><div>${ins}</div></div>`
-  ).join('');
-
-  // Scroll to results
-  results.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-  // Store share data
-  window._cmpData = {
-    shareText: `PesaCheck Month-over-Month\n\n${lastSnap.label}: ${lastSnap.overallScore}/100\n${thisSnap.label}: ${thisSnap.overallScore}/100\nChange: ${scoreDiff > 0 ? '+' : ''}${scoreDiff} points\n\nMoney In: KES ${fmtShort(thisSnap.totalIn)} (was ${fmtShort(lastSnap.totalIn)})\nMoney Out: KES ${fmtShort(thisSnap.totalOut)} (was ${fmtShort(lastSnap.totalOut)})\nSavings Rate: ${thisSnap.savingsRate.toFixed(0)}% (was ${lastSnap.savingsRate.toFixed(0)}%)\n\nTrack yours free \u2192 pesacheck.vercel.app\n@wealthwisefinancestate`
-  };
+  const snaps=cmpLoadSnapshots();
+  const A=snaps.find(s=>s.id===cmpSelThis), B=snaps.find(s=>s.id===cmpSelLast);
+  if(!A||!B) return;
+  document.getElementById('cmp-results').style.display='block';
+  const dlt=(n,p,hi=true)=>{ const diff=n-p,pct=p?Math.round(diff/Math.abs(p)*100):0; if(!diff) return{t:'→ No change',c:'neutral'}; const arrow=diff>0?'↑':'↓'; return{t:`${arrow} ${Math.abs(pct)}% ${diff>0?'more':'less'}`,c:(diff>0)===hi?'up':'down'}; };
+  // Score
+  const sd=dlt(A.overallScore,B.overallScore); const imp=A.overallScore>B.overallScore;
+  document.getElementById('cmp-score-row').innerHTML=`<div class="compare-metric" style="flex:1"><div style="font-size:10px;color:var(--text3);font-family:DM Mono,monospace;text-transform:uppercase;margin-bottom:4px">${B.label}</div><div class="compare-metric-val" style="color:${B.overallScore>=70?'var(--green)':B.overallScore>=40?'var(--amber)':'var(--red)'}">${B.overallScore}/100</div><div style="font-size:11px;color:var(--text3)">Grade ${B.grade}</div></div><div style="padding:.5rem;font-size:22px;display:flex;align-items:center">${imp?'→✅':'→'}</div><div class="compare-metric" style="flex:1;background:${imp?'var(--green-bg)':'var(--surface2)'}"><div style="font-size:10px;color:var(--blue);font-family:DM Mono,monospace;text-transform:uppercase;margin-bottom:4px">${A.label}</div><div class="compare-metric-val" style="color:${A.overallScore>=70?'var(--green)':A.overallScore>=40?'var(--amber)':'var(--red)'}">${A.overallScore}/100</div><div class="compare-metric-delta ${sd.c}">${sd.t}</div></div>`;
+  // Metrics
+  const ms=[{l:'Money In',a:A.totalIn,b:B.totalIn,hi:true},{l:'Money Out',a:A.totalOut,b:B.totalOut,hi:false},{l:'Net Flow',a:A.netFlow,b:B.netFlow,hi:true},{l:'Savings',a:A.savingsRate,b:B.savingsRate,hi:true,pct:true}];
+  document.getElementById('cmp-metrics-row').innerHTML=ms.map(m=>{ const d=dlt(m.a,m.b,m.hi); const fv=v=>m.pct?v.toFixed(0)+'%':'KES '+fmtShort(Math.abs(v)); const c=d.c==='up'?'var(--green)':d.c==='down'?'var(--red)':'var(--text3)'; return `<div class="compare-metric"><div class="compare-metric-lbl">${m.l}</div><div class="compare-metric-val" style="color:${c}">${fv(m.a)}</div><div style="font-size:11px;color:var(--text3);font-family:DM Mono,monospace">was ${fv(m.b)}</div><div class="compare-metric-delta ${d.c}">${d.t}</div></div>`; }).join('');
+  // Categories
+  const allCats=[...new Set([...A.categories.map(c=>c.name),...B.categories.map(c=>c.name)])];
+  const rows=allCats.map(n=>{ const a=A.categories.find(c=>c.name===n)?.amount||0,b=B.categories.find(c=>c.name===n)?.amount||0,diff=a-b; return{n,a,b,diff}; }).sort((x,y)=>y.a-x.a);
+  document.getElementById('cmp-cats-table').innerHTML='<div style="display:flex;font-size:10px;color:var(--text3);font-family:DM Mono,monospace;text-transform:uppercase;padding-bottom:8px;border-bottom:0.5px solid var(--border);margin-bottom:4px"><div style="flex:1">Category</div><div style="min-width:70px;text-align:right">Before</div><div style="min-width:28px;text-align:center">Δ</div><div style="min-width:70px;text-align:right">Now</div></div>'+rows.map(r=>{ const arr=r.diff>500?'↑':r.diff<-500?'↓':'→'; const c=r.diff>500?'var(--red)':r.diff<-500?'var(--green)':'var(--text3)'; return `<div class="compare-cat-row"><div class="compare-cat-name">${r.n}</div><div class="compare-cat-last">${r.b?'KES '+fmtShort(r.b):'—'}</div><div class="compare-cat-arrow" style="color:${c}">${arr}</div><div class="compare-cat-this" style="color:${r.diff>500?'var(--red)':r.diff<-500?'var(--green)':'var(--text)'}">${r.a?'KES '+fmtShort(r.a):'—'}</div></div>`; }).join('');
+  // Insights
+  const ins=[];
+  const scoreDiff=A.overallScore-B.overallScore;
+  if(scoreDiff>5) ins.push(`<strong>Your score improved by ${scoreDiff} points</strong> from ${B.overallScore} to ${A.overallScore}.${A.overallScore>=70?' You are now in the healthy range.':' Keep going — target is 70+'}`);
+  else if(scoreDiff<-5) ins.push(`<strong>Your score dropped by ${Math.abs(scoreDiff)} points</strong>. Identify which category fell most and focus there next month.`);
+  else ins.push(`Your score held steady at ~${A.overallScore}/100. Now push for improvement in your lowest-scoring category.`);
+  const big=rows.filter(r=>r.diff>1000).sort((x,y)=>y.diff-x.diff)[0]; if(big) ins.push(`<strong>${big.n} spending increased by KES ${fmtShort(big.diff)}</strong> — the biggest increase. Focus here to reduce spending.`);
+  const sav=rows.filter(r=>r.diff<-1000).sort((x,y)=>x.diff-y.diff)[0]; if(sav) ins.push(`<strong>${sav.n} spending decreased by KES ${fmtShort(Math.abs(sav.diff))}</strong> — great progress.`);
+  document.getElementById('cmp-insights').innerHTML=ins.map((t,i)=>`<div class="insight-item"><div class="insight-num">0${i+1}</div><div>${t}</div></div>`).join('');
+  window._cmpShare=`PesaCheck Month-over-Month\n${B.label}: ${B.overallScore}/100\n${A.label}: ${A.overallScore}/100\nChange: ${scoreDiff>0?'+':''}${scoreDiff} pts\n\npesacheck.vercel.app`;
+  document.getElementById('cmp-results').scrollIntoView({behavior:'smooth'});
 }
 
-function cmpDeleteSnapshot(id){
-  let snapshots = cmpLoadSnapshots();
-  snapshots = snapshots.filter(s => s.id !== id);
-  cmpSaveSnapshots(snapshots);
-  cmpRenderPage();
-}
-
-function cmpClearAll(){
-  if(!confirm('Delete all saved snapshots? This cannot be undone.')) return;
-  try { localStorage.removeItem(CMP_STORAGE_KEY); } catch(e) {}
-  cmpRenderPage();
-}
-
-function cmpCopy(){
-  if(!window._cmpData) return;
-  navigator.clipboard.writeText(window._cmpData.shareText).then(() => {
-    const b = document.querySelector('#cmp-results .btn-copy-share');
-    if(b){ b.textContent='Copied!'; setTimeout(()=>b.textContent='Copy comparison',2500); }
-  });
-}
+function cmpCopy(){ navigator.clipboard.writeText(window._cmpShare||'').then(()=>{ const b=document.querySelector('#cmp-results .btn-copy-share'); if(b){ b.textContent='Copied!'; setTimeout(()=>b.textContent='Copy comparison',2500); } }); }
+function cmpDel(id){ cmpSaveSnapshots(cmpLoadSnapshots().filter(s=>s.id!==id)); cmpRenderPage(); }
+function cmpClearAll(){ if(!confirm('Delete all snapshots? This cannot be undone.')) return; try{ localStorage.removeItem(CMP_KEY); }catch(e){} cmpRenderPage(); }
 
 </script>
 
@@ -6039,7 +5158,6 @@ function cmpCopy(){
       </div>
     </div>
     <div class="result-box" id="sh-result">
-    <div class="related-tools"><div class="related-tools-label">Try these next</div><div class="related-tools-grid"><button class="related-tool-btn" onclick="navigate('breakeven')" aria-label="Try Break-Even Calculator tool">Break-Even Calculator</button><button class="related-tool-btn" onclick="navigate('selfemployed')" aria-label="Try Self-Employed Tax tool">Self-Employed Tax</button><button class="related-tool-btn" onclick="navigate('budget')" aria-label="Try Budget Builder tool">Budget Builder</button></div></div>
       <div id="sh-tag-wrap"></div>
       <div class="verdict-title" id="sh-verdict-title" style="margin-top:.5rem"></div>
       <div class="verdict-body" id="sh-verdict-body" style="margin-top:.4rem"></div>
@@ -6061,7 +5179,6 @@ function cmpCopy(){
     <button class="back-btn" onclick="navigate('home')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Back to home</button>
     <div class="page-header">
       <div class="page-tag blue">Rent vs Buy Calculator</div>
-      <div style="background:var(--blue-bg);border:0.5px solid rgba(91,158,245,.15);border-radius:var(--rs);padding:10px 14px;margin-top:.5rem;font-size:12px;color:var(--text2);display:flex;align-items:center;gap:10px"><span style="font-size:18px">▶️</span><span>Watch: <a href="https://youtube.com/@wealthwisefinancestate" target="_blank" rel="noopener" style="color:var(--green);font-weight:700;text-decoration:none">Rent vs buy — the Kenya answer</a> on WealthWise</span></div></div>
       <div class="page-title">Should you <span class="blue">rent or buy?</span></div>
       <p class="page-sub">Cultural pressure in Kenya pushes toward property ownership — but the financial reality is more nuanced. This calculator shows you the break-even year and 20-year wealth comparison for both paths.</p>
     </div>
@@ -6125,6 +5242,7 @@ function cmpCopy(){
       </div>
     </div>
   </div>
+</div>
 
 <!-- ══════════════════════ PAGE: FINANCIAL GOAL PLANNER ══════════════════════ -->
 <div class="page" id="page-goals">
@@ -6330,7 +5448,6 @@ function cmpCopy(){
 <div class="page" id="page-retire"><div class="container">
   <button class="back-btn" onclick="navigate('home')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Back to home</button>
   <div class="page-header"><div class="page-tag green">Retirement Reality Check</div>
-      <div style="background:var(--green-bg);border:0.5px solid rgba(46,204,138,.15);border-radius:var(--rs);padding:10px 14px;margin-top:.5rem;font-size:12px;color:var(--text2);display:flex;align-items:center;gap:10px"><span style="font-size:18px">▶️</span><span>Watch: <a href="https://youtube.com/@wealthwisefinancestate" target="_blank" rel="noopener" style="color:var(--green);font-weight:700;text-decoration:none">Retirement planning in Kenya</a> on WealthWise</span></div></div>
   <div class="page-title">NSSF pays <span class="green">KES 8,000/month.</span> Is that enough?</div>
   <p class="page-sub">Most Kenyans discover their retirement savings are catastrophically insufficient when it&#39;s too late to fix it. Calculate your real gap now — and exactly what to do about it.</p></div>
   <div class="card">
@@ -6342,7 +5459,6 @@ function cmpCopy(){
     <div class="input-group"><label class="input-label">Employment type</label><select id="rt-emp" onchange="rtCalc()"><option value="formal">Formal (contributes to NSSF)</option><option value="informal">Informal / self-employed (no NSSF)</option></select></div>
   </div>
   <div class="result-box" id="rt-result">
-    <div class="related-tools"><div class="related-tools-label">Try these next</div><div class="related-tools-grid"><button class="related-tool-btn" onclick="navigate('invest')" aria-label="Try Investment Calculator tool">Investment Calculator</button><button class="related-tool-btn" onclick="navigate('tbill')" aria-label="Try T-Bill Tracker tool">T-Bill Tracker</button><button class="related-tool-btn" onclick="navigate('networth')" aria-label="Try Net Worth tool">Net Worth</button></div></div>
     <div id="rt-tag-wrap"></div>
     <div class="verdict-title" id="rt-verdict-title" style="margin-top:.5rem"></div>
     <div class="verdict-body" id="rt-verdict-body" style="margin-top:.4rem"></div>
@@ -6352,13 +5468,12 @@ function cmpCopy(){
     <div class="insight-list" id="rt-insights" style="margin-top:1rem"></div>
     <div class="share-row"><button class="btn-copy-share" onclick="rtCopy()">Copy result</button><button class="btn-whatsapp" onclick="if(window._rtData)shareWhatsApp(window._rtData.shareText)"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Share on WhatsApp</button></div>
   </div>
-</div>
+</div></div>
 
 <!-- ══ SCAM DETECTOR ══ -->
 <div class="page" id="page-scam"><div class="container">
   <button class="back-btn" onclick="navigate('home')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Back to home</button>
   <div class="page-header"><div class="page-tag red">Investment Scam Detector</div>
-      <div style="background:var(--red-bg);border:0.5px solid rgba(232,93,74,.15);border-radius:var(--rs);padding:10px 14px;margin-top:.5rem;font-size:12px;color:var(--text2);display:flex;align-items:center;gap:10px"><span style="font-size:18px">▶️</span><span>Watch: <a href="https://youtube.com/@wealthwisefinancestate" target="_blank" rel="noopener" style="color:var(--green);font-weight:700;text-decoration:none">How to spot investment scams in Kenya</a> on WealthWise</span></div></div>
   <div class="page-title">Is this investment <span class="red">real or a scam?</span></div>
   <p class="page-sub">Kenya loses billions annually to Ponzi schemes and fraudulent investment groups. Most victims don&#39;t have the mathematical knowledge to recognise what&#39;s impossible. This tool does.</p></div>
   <div class="card">
@@ -6378,7 +5493,6 @@ function cmpCopy(){
     <div class="input-group"><label class="input-label">Do they guarantee returns?</label><select id="sc-guarantee" onchange="scCalc()"><option value="yes">Yes — guaranteed returns</option><option value="no">No — returns not guaranteed</option></select></div>
   </div>
   <div class="result-box" id="sc-result">
-    <div class="related-tools"><div class="related-tools-label">Try these next</div><div class="related-tools-grid"><button class="related-tool-btn" onclick="navigate('invest')" aria-label="Try Investment Calculator tool">Investment Calculator</button><button class="related-tool-btn" onclick="navigate('tbill')" aria-label="Try T-Bill Tracker tool">T-Bill Tracker</button><button class="related-tool-btn" onclick="navigate('about')" aria-label="Try Scam Resources tool">Scam Resources</button></div></div>
     <div id="sc-tag-wrap"></div>
     <div class="verdict-title" id="sc-verdict-title" style="margin-top:.5rem"></div>
     <div class="verdict-body" id="sc-verdict-body" style="margin-top:.4rem"></div>
@@ -6387,7 +5501,7 @@ function cmpCopy(){
     <div class="insight-list" id="sc-insights" style="margin-top:1rem"></div>
     <div class="share-row"><button class="btn-copy-share" onclick="scCopy()">Copy result</button><button class="btn-whatsapp" onclick="if(window._scData)shareWhatsApp(window._scData.shareText)"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Share on WhatsApp</button></div>
   </div>
-</div>
+</div></div>
 
 <!-- ══ BUSINESS BREAK-EVEN ══ -->
 <div class="page" id="page-breakeven"><div class="container">
@@ -6733,46 +5847,31 @@ function cmpCopy(){
 
 <!-- ══ 404 PAGE ══ -->
 <div class="page" id="page-404">
-  <div class="container" style="text-align:center;padding:5rem 1.25rem">
-    <div style="font-size:72px;margin-bottom:1rem">🔍</div>
-    <div class="page-tag green" style="display:block;text-align:center">PesaCheck</div>
+  <div class="container" style="text-align:center;padding:5rem 1rem">
+    <div style="font-size:64px;margin-bottom:1rem">🔍</div>
     <div class="page-title" style="margin:1rem 0">Page not found.</div>
-    <p class="page-sub" style="max-width:400px;margin:0 auto 2rem">That page doesn&#39;t exist — but your money questions still deserve answers.</p>
-    <button class="btn-hero" onclick="navigate('home')">Back to all 32 tools</button>
-    <div style="margin-top:1.5rem;display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
-      <button class="btn-hero-outline" onclick="navigate('analyzer')">Statement Analyzer</button>
-      <button class="btn-hero-outline" onclick="navigate('scam')">Scam Detector</button>
-      <button class="btn-hero-outline" onclick="navigate('retire')">Retirement Check</button>
-    </div>
+    <p class="page-sub" style="max-width:400px;margin:0 auto 1.5rem">That page doesn&#39;t exist — but your money questions still deserve answers.</p>
+    <button class="btn-hero" onclick="navigate('home')">Back to all tools</button>
   </div>
 </div>
 
 <!-- ══ ADVERTISE PAGE ══ -->
 <div class="page" id="page-advertise">
   <div class="container">
-    <button class="back-btn" onclick="navigate('home')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Back to home</button>
+    <button class="back-btn" onclick="navigate('home')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Back</button>
     <div class="page-header">
       <div class="page-tag green">Advertise on PesaCheck</div>
       <div class="page-title">Reach Kenyans <span class="green">making financial decisions.</span></div>
-      <p class="page-sub">PesaCheck users are actively making financial decisions — about loans, insurance, investments, and jobs. That intent makes this audience uniquely valuable for financial service providers.</p>
+      <p class="page-sub">PesaCheck users are actively making financial decisions. That intent makes this audience uniquely valuable for financial service providers.</p>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:2rem">
-      <div class="stat-highlight"><div class="stat-highlight-num">32</div><div class="stat-highlight-lbl">Financial tools</div></div>
-      <div class="stat-highlight"><div class="stat-highlight-num">High</div><div class="stat-highlight-lbl">Purchase intent</div></div>
-      <div class="stat-highlight"><div class="stat-highlight-num">2</div><div class="stat-highlight-lbl">Languages</div></div>
-      <div class="stat-highlight"><div class="stat-highlight-num">0</div><div class="stat-highlight-lbl">Ads currently shown</div></div>
+    <div class="about-card">
+      <h3>Advertising options</h3>
+      <p style="font-size:14px;color:var(--text2);line-height:1.7">Tool-specific sponsorships, rate integration for banks and SACCOs, and YouTube content sponsorship on WealthWise. We never show popup ads, never influence calculator results, and only accept CMA/CBK regulated partners.</p>
     </div>
-    <div class="about-card"><h3>Advertising options</h3>
-      <div class="hiw-step"><div class="hiw-num">1</div><div class="hiw-content"><h4>Tool-specific sponsorship</h4><p>Sponsor a specific tool page — e.g., the Loan Checker for a bank, Insurance Calculator for an insurance company. Clear sponsorship disclosure included.</p></div></div>
-      <div class="hiw-step"><div class="hiw-num">2</div><div class="hiw-content"><h4>Rate integration</h4><p>For banks, SACCOs, and insurance companies — have your real rates appear directly in the relevant calculator so users compare including your product.</p></div></div>
-      <div class="hiw-step"><div class="hiw-num">3</div><div class="hiw-content"><h4>YouTube content sponsorship</h4><p>Sponsor financial education videos on WealthWise (@wealthwisefinancestate), linked from PesaCheck tools. Combined web + video reach.</p></div></div>
-    </div>
-    <div class="about-card"><h3>Our advertising principles</h3>
-      <p style="font-size:14px;color:var(--text2);line-height:1.8">We never show popups · We never allow advertisers to influence results · We never sell user data · We never accept unlicensed lenders or investment schemes · We clearly disclose all sponsored content · We only partner with CMA and CBK regulated entities.</p>
-    </div>
-    <div class="about-card"><h3>Get in touch</h3>
-      <p style="font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:1rem">Email us with your company name, product, and target audience to discuss options.</p>
-      <a href="mailto:investwithwealthwise@gmail.com?subject=PesaCheck Advertising Inquiry" class="btn-hero" style="display:inline-block;text-decoration:none">Email advertising inquiry</a>
+    <div class="about-card">
+      <h3>Get in touch</h3>
+      <p style="font-size:14px;color:var(--text2);margin-bottom:1rem">Email us with your company name and target audience.</p>
+      <a href="mailto:investwithwealthwise@gmail.com?subject=PesaCheck Advertising" class="btn-hero" style="display:inline-block;text-decoration:none">Email advertising inquiry</a>
     </div>
   </div>
 </div>
@@ -6780,40 +5879,32 @@ function cmpCopy(){
 <!-- ══ SACCO LICENSING PAGE ══ -->
 <div class="page" id="page-sacco">
   <div class="container">
-    <button class="back-btn" onclick="navigate('home')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Back to home</button>
+    <button class="back-btn" onclick="navigate('home')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Back</button>
     <div class="page-header">
       <div class="page-tag amber">PesaCheck for SACCOs &amp; Institutions</div>
       <div class="page-title">White-label financial tools <span class="amber">for your members.</span></div>
-      <p class="page-sub">Kenya has 14,000+ registered SACCOs, MFIs, and cooperatives. Most lack digital tools to serve their members. PesaCheck can be licensed and branded for your institution.</p>
+      <p class="page-sub">Kenya has 14,000+ registered SACCOs. PesaCheck can be licensed and branded for your institution — with your loan rates, dividend rates, and products pre-loaded.</p>
     </div>
-    <div class="about-card"><h3>What licensing includes</h3>
-      <div class="hiw-step"><div class="hiw-num">1</div><div class="hiw-content"><h4>Your brand, your domain</h4><p>Full white-label at your own domain (tools.yoursacco.co.ke) with your logo and colors. Members see your institution, not PesaCheck.</p></div></div>
-      <div class="hiw-step"><div class="hiw-num">2</div><div class="hiw-content"><h4>Your rates pre-loaded</h4><p>Your loan rates, dividends, and contribution structures built into every calculator. Members get accurate results for your products immediately.</p></div></div>
-      <div class="hiw-step"><div class="hiw-num">3</div><div class="hiw-content"><h4>All 32 tools included</h4><p>Every tool — loan checker, budget builder, chama tracker, retirement planner — with your products built in.</p></div></div>
-    </div>
-    <div class="about-card"><h3>Pricing</h3>
+    <div class="about-card">
+      <h3>Pricing</h3>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-bottom:.75rem">
         <div style="background:var(--surface2);border-radius:var(--r);padding:1.25rem;border:0.5px solid var(--border)">
           <div style="font-size:10px;color:var(--text3);font-family:DM Mono,monospace;text-transform:uppercase;margin-bottom:.4rem">Starter</div>
-          <div style="font-size:22px;font-weight:800;color:var(--green);font-family:DM Mono,monospace">KES 15,000<span style="font-size:13px;font-weight:400;color:var(--text3)">/mo</span></div>
-          <div style="font-size:12px;color:var(--text3);margin-top:.4rem">Up to 1,000 members · 5 tools</div>
+          <div style="font-size:22px;font-weight:800;color:var(--green);font-family:DM Mono,monospace">KES 15,000<span style="font-size:12px;font-weight:400;color:var(--text3)">/mo</span></div>
+          <div style="font-size:12px;color:var(--text3);margin-top:.4rem">Up to 1,000 members</div>
         </div>
         <div style="background:var(--green-bg);border-radius:var(--r);padding:1.25rem;border:0.5px solid var(--green)">
           <div style="font-size:10px;color:var(--green);font-family:DM Mono,monospace;text-transform:uppercase;margin-bottom:.4rem">Professional ★</div>
-          <div style="font-size:22px;font-weight:800;color:var(--green);font-family:DM Mono,monospace">KES 45,000<span style="font-size:13px;font-weight:400;color:var(--text3)">/mo</span></div>
+          <div style="font-size:22px;font-weight:800;color:var(--green);font-family:DM Mono,monospace">KES 45,000<span style="font-size:12px;font-weight:400;color:var(--text3)">/mo</span></div>
           <div style="font-size:12px;color:var(--text3);margin-top:.4rem">Up to 10,000 members · All 32 tools</div>
         </div>
-        <div style="background:var(--surface2);border-radius:var(--r);padding:1.25rem;border:0.5px solid var(--border)">
-          <div style="font-size:10px;color:var(--text3);font-family:DM Mono,monospace;text-transform:uppercase;margin-bottom:.4rem">Enterprise</div>
-          <div style="font-size:22px;font-weight:800;color:var(--text);font-family:DM Mono,monospace">Custom</div>
-          <div style="font-size:12px;color:var(--text3);margin-top:.4rem">Unlimited · API · Custom tools · SLA</div>
-        </div>
       </div>
-      <p style="font-size:12px;color:var(--text3)">30-day free trial included. Setup fee waived for SACCOs registered before 2020.</p>
+      <p style="font-size:12px;color:var(--text3)">30-day free trial. Setup fee waived for SACCOs registered before 2020.</p>
     </div>
-    <div class="about-card"><h3>Request a demo</h3>
-      <p style="font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:1rem">Send your SACCO name and member count. We set up a branded demo within 5 business days.</p>
-      <a href="mailto:investwithwealthwise@gmail.com?subject=PesaCheck SACCO Licensing Demo" class="btn-hero" style="display:inline-block;text-decoration:none">Request a free demo</a>
+    <div class="about-card">
+      <h3>Request a demo</h3>
+      <p style="font-size:14px;color:var(--text2);margin-bottom:1rem">Send your SACCO name and member count. We set up a branded demo within 5 business days at no cost.</p>
+      <a href="mailto:investwithwealthwise@gmail.com?subject=PesaCheck SACCO Demo" class="btn-hero" style="display:inline-block;text-decoration:none">Request a free demo</a>
     </div>
   </div>
 </div>
@@ -6821,123 +5912,93 @@ function cmpCopy(){
 <!-- ══ PRO PAGE ══ -->
 <div class="page" id="page-pro">
   <div class="container">
-    <button class="back-btn" onclick="navigate('home')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Back to home</button>
+    <button class="back-btn" onclick="navigate('home')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Back</button>
     <div class="page-header">
       <div class="page-tag purple">PesaCheck Pro</div>
       <div class="page-title">Free forever. <span style="color:var(--purple)">Pro goes deeper.</span></div>
-      <p class="page-sub">All 32 tools stay free permanently. Pro is for people who want historical tracking, PDF exports, AI coaching, and month-over-month comparison.</p>
+      <p class="page-sub">All 32 tools stay free permanently. Pro adds PDF exports, month-over-month comparison, AI coaching, and historical tracking at KES 299/month.</p>
     </div>
     <div style="background:linear-gradient(135deg,rgba(180,126,245,.1),rgba(46,204,138,.06));border:0.5px solid rgba(180,126,245,.25);border-radius:var(--r);padding:2rem;margin-bottom:1.5rem;text-align:center">
-      <div style="font-size:10px;color:var(--purple);text-transform:uppercase;letter-spacing:.12em;font-family:DM Mono,monospace;margin-bottom:.5rem">PesaCheck Pro — Founding Member Price</div>
-      <div style="font-size:48px;font-weight:800;font-family:DM Mono,monospace;margin-bottom:.25rem">KES 299<span style="font-size:16px;font-weight:400;color:var(--text3)">/month</span></div>
-      <div style="font-size:13px;color:var(--text3);margin-bottom:1.5rem">Cancel anytime · Founding member rate locked for life</div>
-      <!-- PAYMENT FORM -->
-      <form onsubmit="initiateProPayment(event)" style="max-width:420px;margin:0 auto" id="pro-payment-form">
-        <div style="display:flex;flex-direction:column;gap:8px">
-          <input type="text" id="pro-name" placeholder="Your name" style="padding:12px 14px;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:13px;color:var(--text);font-family:'Syne',sans-serif;outline:none">
-          <input type="email" id="pro-email" placeholder="Your email address" required style="padding:12px 14px;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:13px;color:var(--text);font-family:'Syne',sans-serif;outline:none">
-          <input type="tel" id="pro-phone" placeholder="M-Pesa phone number (e.g. 0712345678)" required style="padding:12px 14px;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:13px;color:var(--text);font-family:'Syne',sans-serif;outline:none">
-          <button type="submit" id="pro-pay-btn" style="padding:14px 20px;background:var(--purple);color:#fff;border:none;border-radius:var(--rs);font-size:14px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif">Pay KES 299 with M-Pesa</button>
-        </div>
+      <div style="font-size:10px;color:var(--purple);text-transform:uppercase;letter-spacing:.12em;font-family:DM Mono,monospace;margin-bottom:.5rem">PesaCheck Pro</div>
+      <div style="font-size:44px;font-weight:800;font-family:DM Mono,monospace;margin-bottom:.25rem">KES 299<span style="font-size:15px;font-weight:400;color:var(--text3)">/month</span></div>
+      <div style="font-size:13px;color:var(--text3);margin-bottom:1.5rem">Cancel anytime</div>
+      <div style="max-width:420px;margin:0 auto">
+        <input type="text" id="pro-name" placeholder="Your name" style="width:100%;padding:11px 14px;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:13px;color:var(--text);font-family:'Syne',sans-serif;outline:none;margin-bottom:8px;box-sizing:border-box">
+        <input type="email" id="pro-email" placeholder="Your email address" style="width:100%;padding:11px 14px;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:13px;color:var(--text);font-family:'Syne',sans-serif;outline:none;margin-bottom:8px;box-sizing:border-box">
+        <input type="tel" id="pro-phone" placeholder="M-Pesa number (e.g. 0712345678)" style="width:100%;padding:11px 14px;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:13px;color:var(--text);font-family:'Syne',sans-serif;outline:none;margin-bottom:8px;box-sizing:border-box">
+        <button id="pro-pay-btn" onclick="initiateProPayment(event)" style="width:100%;padding:14px 20px;background:var(--purple);color:#fff;border:none;border-radius:var(--rs);font-size:14px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif">Pay KES 299 with M-Pesa</button>
         <div id="pro-pay-msg" style="font-size:12px;margin-top:.75rem;display:none;line-height:1.5"></div>
-      </form>
-      <div style="height:1px;background:var(--border);margin:1.5rem 0"></div>
-      <!-- CODE VERIFICATION -->
-      <div style="text-align:center">
-        <div style="font-size:13px;color:var(--text2);margin-bottom:.75rem">Already have a code? Activate it here:</div>
-        <div style="display:flex;gap:8px;max-width:380px;margin:0 auto;flex-wrap:wrap;justify-content:center">
-          <input type="text" id="pro-code-input" placeholder="PC-PRO-2026-03-XXXX" style="flex:1;min-width:200px;padding:10px 14px;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:13px;color:var(--text);font-family:'Syne',sans-serif;outline:none;text-transform:uppercase;letter-spacing:.05em">
-          <button onclick="verifyProCode()" style="padding:10px 16px;background:var(--green);color:#0a0a08;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif;white-space:nowrap">Activate</button>
+      </div>
+      <div style="margin-top:1.25rem;padding-top:1.25rem;border-top:0.5px solid rgba(180,126,245,.2)">
+        <div style="font-size:13px;color:var(--text2);margin-bottom:.5rem">Already have a code?</div>
+        <div style="display:flex;gap:8px;max-width:320px;margin:0 auto">
+          <input type="text" id="pro-code-input" placeholder="PC-PRO-2026-03-XXXX" style="flex:1;padding:10px 12px;background:var(--surface2);border:0.5px solid var(--border2);border-radius:var(--rs);font-size:12px;color:var(--text);font-family:DM Mono,monospace;outline:none;text-transform:uppercase">
+          <button onclick="verifyProCode()" style="padding:10px 14px;background:var(--green);color:#0a0a08;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif">Activate</button>
         </div>
-        <div id="pro-verify-msg" style="font-size:12px;margin-top:.75rem;display:none;line-height:1.5"></div>
+        <div id="pro-verify-msg" style="font-size:12px;margin-top:.5rem;display:none"></div>
       </div>
     </div>
-    <div class="about-card"><h3>What Pro includes</h3>
-      <div class="hiw-step"><div class="hiw-num">★</div><div class="hiw-content"><h4>Month-over-month statement comparison</h4><p>Upload this month and last month&#39;s statement. See exactly how your spending changed — which categories grew, shrank, and why.</p></div></div>
-      <div class="hiw-step"><div class="hiw-num">★</div><div class="hiw-content"><h4>PDF Financial Identity Card</h4><p>Export a beautifully formatted PDF of your complete financial health report — shareable with an advisor or kept for personal records.</p></div></div>
-      <div class="hiw-step"><div class="hiw-num">★</div><div class="hiw-content"><h4>AI financial coaching</h4><p>Personalised 90-day plan based on your actual scores — not generic advice. Real analysis, real actions.</p></div></div>
-      <div class="hiw-step"><div class="hiw-num">★</div><div class="hiw-content"><h4>Historical health score tracking</h4><p>See your monthly financial health score trend over time. The most motivating way to build better habits.</p></div></div>
-      <div class="hiw-step"><div class="hiw-num">★</div><div class="hiw-content"><h4>School fees calendar reminders</h4><p>Automated reminders before each term with your weekly savings target recalculated each month.</p></div></div>
+    <div class="about-card">
+      <h3>What Pro includes</h3>
+      <div style="font-size:14px;color:var(--text2);line-height:1.9">
+        ★ Month-over-month statement comparison<br>
+        ★ PDF Financial Identity Card export<br>
+        ★ AI financial coaching based on your real scores<br>
+        ★ Historical health score tracking<br>
+        ★ School fees calendar reminders
+      </div>
     </div>
   </div>
 </div>
 
-
-<!-- ══════════════════════ PAGE: MONTH-OVER-MONTH COMPARISON ══════════════════════ -->
+<!-- ══ COMPARE PAGE ══ -->
 <div class="page" id="page-compare">
   <div class="container">
-    <button class="back-btn" onclick="navigate('analyzer')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Back to analyzer</button>
+    <button class="back-btn" onclick="navigate('home')"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>Back</button>
     <div class="page-header">
       <div class="page-tag blue">Month-over-Month Comparison</div>
       <div class="page-title">How are your finances <span class="blue">trending?</span></div>
-      <p class="page-sub">Compare any two months of M-Pesa or bank statement analysis. See exactly what changed — which spending grew, which shrank, and whether your financial health score is improving.</p>
+      <p class="page-sub">Compare any two months of M-Pesa statement analysis. See exactly what changed.</p>
     </div>
-
-    <!-- No snapshots state -->
     <div id="cmp-empty" style="text-align:center;padding:3rem 1rem;display:none">
       <div style="font-size:48px;margin-bottom:1rem">📅</div>
       <div style="font-size:16px;font-weight:700;margin-bottom:.5rem">No saved snapshots yet</div>
       <p style="font-size:14px;color:var(--text2);margin-bottom:1.5rem">Analyze a statement and save it as a snapshot. Then next month, analyze again and compare the two.</p>
       <button class="btn-hero" onclick="navigate('analyzer')">Analyze a statement now</button>
     </div>
-
-    <!-- Snapshots available -->
     <div id="cmp-main" style="display:none">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem">
-        <!-- This month -->
         <div class="card">
           <div style="font-size:11px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.08em;font-family:DM Mono,monospace;margin-bottom:.75rem">This month</div>
           <div id="cmp-this-list"></div>
         </div>
-        <!-- Last month -->
         <div class="card">
           <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.08em;font-family:DM Mono,monospace;margin-bottom:.75rem">Compare with</div>
           <div id="cmp-last-list"></div>
         </div>
       </div>
-
-      <button class="btn-primary" id="cmp-compare-btn" onclick="cmpRunComparison()" style="display:none">Compare these two months →</button>
-
-      <!-- Comparison results -->
+      <button class="btn-primary" id="cmp-compare-btn" onclick="cmpRunComparison()" style="display:none;margin-bottom:1.5rem">Compare these two months →</button>
       <div id="cmp-results" style="display:none">
-
-        <!-- Score change -->
-        <div class="sec-divider" style="margin:1.5rem 0 1rem"><div class="sec-divider-line"></div><div class="sec-label">Financial health score</div><div class="sec-divider-line"></div></div>
+        <div class="sec-divider" style="margin:1rem 0"><div class="sec-divider-line"></div><div class="sec-label">Score change</div><div class="sec-divider-line"></div></div>
         <div style="display:flex;gap:10px;flex-wrap:wrap" id="cmp-score-row"></div>
-
-        <!-- Key metrics -->
         <div class="sec-divider" style="margin:1.5rem 0 1rem"><div class="sec-divider-line"></div><div class="sec-label">Key metrics</div><div class="sec-divider-line"></div></div>
         <div style="display:flex;gap:10px;flex-wrap:wrap" id="cmp-metrics-row"></div>
-
-        <!-- Spending changes -->
         <div class="sec-divider" style="margin:1.5rem 0 1rem"><div class="sec-divider-line"></div><div class="sec-label">Spending by category</div><div class="sec-divider-line"></div></div>
         <div class="card" id="cmp-cats-table"></div>
-
-        <!-- Score bars comparison -->
-        <div class="sec-divider" style="margin:1.5rem 0 1rem"><div class="sec-divider-line"></div><div class="sec-label">Identity score comparison</div><div class="sec-divider-line"></div></div>
-        <div id="cmp-scores-bars"></div>
-
-        <!-- Insights -->
         <div class="sec-divider" style="margin:1.5rem 0 1rem"><div class="sec-divider-line"></div><div class="sec-label">What changed</div><div class="sec-divider-line"></div></div>
         <div class="insight-list" id="cmp-insights"></div>
-
         <div class="share-row" style="margin-top:1.5rem">
           <button class="btn-copy-share" onclick="cmpCopy()">Copy comparison</button>
-          <button class="btn-whatsapp" onclick="if(window._cmpData)shareWhatsApp(window._cmpData.shareText)">
-            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Share comparison
-          </button>
         </div>
       </div>
-
-      <!-- Manage snapshots -->
       <div style="margin-top:2rem;padding-top:1rem;border-top:0.5px solid var(--border)">
-        <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.08em;font-family:DM Mono,monospace;margin-bottom:.75rem">Manage saved snapshots</div>
+        <div style="font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.08em;font-family:DM Mono,monospace;margin-bottom:.75rem">Saved snapshots</div>
         <div id="cmp-manage-list"></div>
         <button class="btn-secondary" onclick="cmpClearAll()" style="margin-top:.75rem;color:var(--red);border-color:var(--red)">Clear all snapshots</button>
       </div>
     </div>
   </div>
+</div>
 
 </body>
 </html>
