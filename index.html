@@ -1103,7 +1103,6 @@ body.disclaimer-active .page.active{padding-top:calc(var(--nav-h) + 40px)}
         <div class="tc-desc">Split any bill fairly — restaurant, shared rent, group travel. Equal or custom splits. Generates a WhatsApp-ready breakdown so everyone knows exactly what they owe.</div>
         <div class="tc-badge">Equal or custom · WhatsApp ready</div>
       </div>
-    </div>
 
       <div class="tool-card green" onclick="navigate('retire')">
         <div class="tc-icon green"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2ECC8A" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><line x1="12" y1="14" x2="12" y2="20"/></svg></div>
@@ -1165,6 +1164,8 @@ body.disclaimer-active .page.active{padding-top:calc(var(--nav-h) + 40px)}
         <div class="tc-desc">The most popular savings habit in the world. Save KES 100 in week 1, KES 200 in week 2, and so on. By week 52 you&#39;ve saved KES 137,800. Track every week with a tap.</div>
         <div class="tc-badge">Weekly tracker · total progress</div>
       </div>
+
+    </div>
 
     <div class="pro-banner">
       <div class="pro-banner-title">PesaCheck Pro — coming soon</div>
@@ -1638,18 +1639,42 @@ async function ensurePdfJs(){
 // ══════════════════════════════════════════
 // NAVIGATION
 // ══════════════════════════════════════════
-function navigate(page){
+function navigate(page, pushState=true){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.nav-link').forEach(l=>l.classList.remove('active'));
-  document.getElementById('page-'+page).classList.add('active');
+  const pg=document.getElementById('page-'+page);
+  if(!pg){navigate('home', pushState);return;}
+  pg.classList.add('active');
   document.querySelectorAll('.nav-link').forEach(l=>{if(l.textContent.toLowerCase().includes(page)||page==='home'&&l.textContent==='Home')l.classList.add('active');});
   window.scrollTo({top:0,behavior:'smooth'});
   if(page==='school')sfUpdateChildren();
-  if(page==='progress'){}  // progress report page
+  if(page==='progress'){}
   if(page==='analyzer')ensurePdfJs();
   if(page==='remit')rmFetchRates();
   if(page==='quiz'&&document.getElementById('qz-intro').style.display==='none'&&document.getElementById('qz-result').style.display==='none'){}
+  // Push browser history so back button works
+  if(pushState){
+    const url = page==='home' ? '/' : ('/#'+page);
+    history.pushState({page}, '', url);
+  }
 }
+
+// Handle browser back / forward buttons
+window.addEventListener('popstate', function(e){
+  const page = (e.state && e.state.page) ? e.state.page : 'home';
+  navigate(page, false);
+});
+
+// On first load, honour any #hash in the URL
+(function(){
+  const hash = window.location.hash.replace('#','');
+  const pg = document.getElementById('page-'+hash);
+  if(hash && pg){
+    navigate(hash, false);
+  } else {
+    history.replaceState({page:'home'}, '', '/');
+  }
+})();
 
 function toggleMenu(){
   document.getElementById('mobile-menu').classList.toggle('open');
@@ -5127,7 +5152,7 @@ function chRender(){
   window._chProgress = { totalSaved, completed: completed.length, totalPossible };
 }
 
-function chCopy(){
+function ch52Copy(){
   if(!window._chProgress) return;
   const d = window._chProgress;
   const txt = '52-Week Savings Challenge Progress\n\nWeeks completed: ' + d.completed + '/52\nSaved so far: ' + fmt(d.totalSaved) + '\nFinal target: ' + fmt(d.totalPossible) + '\n\nJoin the challenge \u2192 pesacheck.vercel.app\n@wealthwisefinancestate';
@@ -5803,7 +5828,7 @@ function roundRectStroke(ctx,x,y,w,h,r){
 // ══════════════════════════════════════════
 // MONTHLY PROGRESS REPORT
 // ══════════════════════════════════════════
-function prCalc(){
+function progressCalc(){
   const inNow=parseFloat(document.getElementById('pr-in-now').value)||0;
   const outNow=parseFloat(document.getElementById('pr-out-now').value)||0;
   const savedNow=parseFloat(document.getElementById('pr-saved-now').value)||0;
@@ -5931,7 +5956,7 @@ function prCalc(){
   window._prData={shareText,score,verdictText};
 }
 
-function prCopy(){
+function progressCopy(){
   if(!window._prData)return;
   navigator.clipboard.writeText(window._prData.shareText).then(()=>{
     const b=document.querySelector('#pr-result .btn-secondary');
@@ -7129,7 +7154,7 @@ function copyTemplate(id){
   <div class="metric-grid" id="ch-metrics" style="margin-top:1rem"></div>
   <div class="week-grid" id="ch-grid" style="margin-top:1rem"></div>
   <div style="display:flex;gap:8px;margin-top:1rem">
-    <button class="btn-copy-share" onclick="chCopy()" style="flex:1">Copy progress</button>
+    <button class="btn-copy-share" onclick="ch52Copy()" style="flex:1">Copy progress</button>
     <button class="btn-secondary" onclick="chReset()" style="flex:1;margin-top:0">Reset challenge</button>
   </div>
   <div style="font-size:11px;color:var(--text3);text-align:center;margin-top:.75rem;font-family:'DM Mono',monospace">🔒 Progress saved in your browser only (localStorage) — never sent to any server. Clears if you clear your browser data.</div>
